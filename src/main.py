@@ -67,7 +67,6 @@ st.divider()
 
 #Watchlist
 def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.DataFrame:
-    budget_map = dict(zip(budgets["category"],budgets["budget"]))
     # All transactions grouped by category and total amounts for each
     grouped = (transactions.groupby(["group", "category"], as_index=False)["amount"].sum())
     watchlist_df = pd.merge(grouped, budgets, on="category", how="left")
@@ -101,3 +100,19 @@ def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.Dat
     watchlist_df = watchlist_df.sort_values(["Group", "Index"])
 
     return watchlist_df
+
+watchlist_df = build_watchlist(transactions_df, budgets_df)
+
+st.subheader("Watchlist")
+
+st.dataframe(
+    watchlist_df, 
+    use_container_width=True, 
+    hide_index=True, 
+    column_config={
+        "Amount": st.column_config.NumberColumn("Amount", format="$%.2f"),
+        "Budget": st.column_config.NumberColumn("Budget", format="$%.2f"),
+        "Used": st.column_config.NumberColumn("Used", format="%.1f%%"),
+        "Variance": st.column_config.NumberColumn("Amount", format="$ %.2f"),
+    }
+    )
