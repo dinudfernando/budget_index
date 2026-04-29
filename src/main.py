@@ -79,33 +79,25 @@ def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.Dat
         "budget": "Budget"
     })
 
-    watchlist_df["Index"] = watchlist_df["Category"] + " Index"
     #Fill nulls with 0 in budget
     watchlist_df["Budget"] = watchlist_df["Budget"].fillna(0)
-    watchlist_df["Used"] = 0.0
+    watchlist_df["PctBudget"] = 0.0
     budget_mask = watchlist_df["Budget"] > 0
-    watchlist_df.loc[budget_mask, "Used"] = (watchlist_df.loc[budget_mask, "Amount"]/ watchlist_df.loc[budget_mask, "Budget"] * 100)
-    watchlist_df["Variance"] = watchlist_df["Amount"] - watchlist_df["Budget"]
-
-    watchlist_df["Status"] = "On Track"
-    watchlist_df.loc[watchlist_df["Variance"] > 0, "Status"] = "Over"
-    watchlist_df.loc[watchlist_df["Variance"] < 0, "Status"] = "Under"
+    watchlist_df.loc[budget_mask, "PctBudget"] = (watchlist_df.loc[budget_mask, "Amount"]/ watchlist_df.loc[budget_mask, "Budget"] * 100)
 
     # Columns in dashboard & Rounding, Sort
-    watchlist_df = watchlist_df[["Group", "Index", "Amount", "Budget", "Used", "Variance", "Status"]]
+    watchlist_df = watchlist_df[["Group", "Category", "Amount", "PctBudget"]]
     watchlist_df["Amount"] = watchlist_df["Amount"].round(2)
-    watchlist_df["Budget"] = watchlist_df["Budget"].round(2)
-    watchlist_df["Used"] = watchlist_df["Used"].round(1)
-    watchlist_df["Variance"] = watchlist_df["Variance"].round(2)
+    watchlist_df["PctBudget"] = watchlist_df["PctBudget"].round(1)
 
-    watchlist_df = watchlist_df.sort_values(["Group", "Index"])
+    watchlist_df = watchlist_df.sort_values(by="Category")
+    watchlist_df = watchlist_df.sort_values(by="Group")
 
     return watchlist_df
 
 watchlist_df = build_watchlist(transactions_df, budgets_df)
 
 # Trend Data/ sparkline
-
 def build_trend_data(transactions: pd.DataFrame) -> pd.DataFrame:
     """Builds data for sparkline under Watchlist"""
 
