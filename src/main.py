@@ -51,6 +51,16 @@ budgets_df = load_budgets()
 income_mask = transactions_df["group"] == "Income"
 expense_mask = transactions_df["group"] == "Expense"
 
+# Sample Data Metrics
 total_income = transactions_df.loc[income_mask, "amount"].sum()
-total_expness = transactions_df.loc[expense_mask, "amount"].sum()
-net_cashflow = total_income - total_expness
+total_expenses = transactions_df.loc[expense_mask, "amount"].sum()
+net_cashflow = total_income - total_expenses
+savings_rate = (net_cashflow / total_income * 100) if total_income > 0 else 0
+
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Total Income", f"${total_income:,.2f}")
+col2.metric("Total Expenses", f"${total_expenses:,.2f}")
+col3.metric("Net Cash Flow", f"${net_cashflow:,.2f}")
+col4.metric("Savings Rate", f"${savings_rate:,.2f}")
+
+st.divider
