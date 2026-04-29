@@ -1,0 +1,15 @@
+[
+  {"category": "Salary", "budget": 3200},
+  {"category": "Freelance", "budget": 450},
+  {"category": "Other Income", "budget": 100},
+
+  {"category": "Housing", "budget": 1200},
+  {"category": "Food", "budget": 350},
+  {"category": "Transport", "budget": 180},
+  {"category": "Utilities", "budget": 170},
+  {"category": "Entertainment", "budget": 100},
+  {"category": "Subscriptions", "budget": 30},
+  {"category": "Health", "budget": 60},
+  {"category": "Savings", "budget": 350},
+  {"category": "Shopping", "budget": 100}
+]
