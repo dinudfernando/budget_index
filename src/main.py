@@ -9,3 +9,11 @@ APP_PATH = os.path.dirname(os.path.abspath(__file__))
 def get_data_path(filename: str) -> str:
     return os.path.join(APP_PATH, "data", filename)
 
+st.set_page_config(
+    page_title="Budget Index",
+    page_icon="🪙",
+    layout="wide"
+)
+
+st.title("At a Glance...")
+st.text("Hello World")
