@@ -81,7 +81,7 @@ def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.Dat
     watchlist_df["Index"] = watchlist_df["Category"] + " Index"
     #Fill nulls with 0 in budget
     watchlist_df["Budget"] = watchlist_df["Budget"].fillna(0)
-    watchlist_df["Used"] = 0
+    watchlist_df["Used"] = 0.0
     budget_mask = watchlist_df["Budget"] > 0
     watchlist_df.loc[budget_mask, "Used"] = (watchlist_df.loc[budget_mask, "Amount"]/ watchlist_df.loc[budget_mask, "Budget"] * 100)
     watchlist_df["Variance"] = watchlist_df["Amount"] - watchlist_df["Budget"]
@@ -113,6 +113,6 @@ st.dataframe(
         "Amount": st.column_config.NumberColumn("Amount", format="$%.2f"),
         "Budget": st.column_config.NumberColumn("Budget", format="$%.2f"),
         "Used": st.column_config.NumberColumn("Used", format="%.1f%%"),
-        "Variance": st.column_config.NumberColumn("Amount", format="$ %.2f"),
+        "Variance": st.column_config.NumberColumn("Variance", format="$ %.2f"),
     }
     )
