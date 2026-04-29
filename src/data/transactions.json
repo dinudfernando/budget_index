@@ -44,7 +44,7 @@
   {"date": "2026-03-23", "group": "Expenses", "category": "Savings", "amount": 400, "tag": "Emergency Fund"},
   {"date": "2026-03-27", "group": "Expenses", "category": "Shopping", "amount": 120, "tag": "Shoes"},
 
-  {"date": "2026-04-03", "group": "Income", "category": "Salary", "amount": 3200, "tag": "Paycheck"},
+  {"date": "2026-04-03", "group": "Income", "category": "Salary", "amount": 4200, "tag": "Paycheck"},
   {"date": "2026-04-09", "group": "Income", "category": "Freelance", "amount": 470, "tag": "Web Work"},
   {"date": "2026-04-22", "group": "Income", "category": "Other Income", "amount": 125, "tag": "Refund"},
 
