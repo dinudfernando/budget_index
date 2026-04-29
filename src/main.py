@@ -138,12 +138,21 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
             first_val = float(category_trend["amount"].iloc[0])
             last_val = float(category_trend["amount"].iloc[-1])
 
-            if last_val > first_val:
-                spark_color = "green"
-            elif last_val < first_val:
-                spark_color = "red"
-            else:
-                spark_color = "gray"
+            if group_name=="Income":
+                if last_val > first_val:
+                    spark_color = "green"
+                elif last_val < first_val:
+                    spark_color = "red"
+                else:
+                    spark_color = "gray"
+
+            if group_name=="Expenses":
+                if last_val > first_val:
+                    spark_color = "red"
+                elif last_val < first_val:
+                    spark_color = "green"
+                else:
+                    spark_color = "gray"
         
         col1, col2, col3, col4 = st.columns([2.5,1,1,2])
 
