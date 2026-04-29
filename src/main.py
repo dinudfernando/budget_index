@@ -170,8 +170,6 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
             st.write(f"${row["PctBudget"]:,.2f}")
 
         with col4:
-            st.caption("Trend")
-
             if len(category_trend) > 0:
                 spark_data = category_trend.set_index("Month")[["amount"]].copy()
                 spark_data = spark_data.reset_index(drop=True)
