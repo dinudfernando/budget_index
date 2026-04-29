@@ -49,7 +49,7 @@ transactions_df = load_transactions()
 budgets_df = load_budgets()
 
 income_mask = transactions_df["group"] == "Income"
-expense_mask = transactions_df["group"] == "Expense"
+expense_mask = transactions_df["group"] == "Expenses"
 
 # Sample Data Metrics
 total_income = transactions_df.loc[income_mask, "amount"].sum()
@@ -63,4 +63,18 @@ col2.metric("Total Expenses", f"${total_expenses:,.2f}")
 col3.metric("Net Cash Flow", f"${net_cashflow:,.2f}")
 col4.metric("Savings Rate", f"{savings_rate:,.2f}%")
 
-st.divider
+st.divider()
+
+#Watchlist
+def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.DataFrame:
+    budget_map = dict(zip(budgets["category"],budgets["budget"]))
+    # All transactions grouped by category and total amounts for each
+    grouped = (transactions.groupby(["group", "category"], as_index=False)["amount"].sum())
+    watchlist_df = pd.merge(grouped, budgets, on="category", how="left")
+
+    watchlist_df = watchlist_df.rename(columns={
+        "group": "Group",
+        "category"
+    })
+
+    return watchlist_df
