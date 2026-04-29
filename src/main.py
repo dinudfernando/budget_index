@@ -164,10 +164,12 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
             st.caption("Trend")
 
             if len(category_trend) > 0:
-                spark_data = category_trend.set_index("Month")[["amount"]]
+                spark_data = category_trend.set_index("Month")[["amount"]].copy()
+                spark_data = spark_data.reset_index(drop=True)
+                spark_data["point"] = range(len(spark_data))
 
                 spark_chart = (
-                    alt.Chart(spark_data).mark_line(color=spark_color).encode(x=alt.X("Month:N", axis=None), y=alt.Y("amount:Q", axis=None)).properties(height=60)
+                    alt.Chart(spark_data).mark_line(color=spark_color).encode(x=alt.X("point:Q", axis=None), y=alt.Y("amount:Q", axis=None)).properties(height=60)
                 )
                 st.altair_chart(spark_chart, use_container_width=True)
             else:
