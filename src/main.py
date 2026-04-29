@@ -4,6 +4,7 @@ import json
 import pandas as pd
 import numpy as np
 import streamlit as st
+import altair as alt
 
 
 # Path Helper
@@ -164,12 +165,11 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
 
             if len(category_trend) > 0:
                 spark_data = category_trend.set_index("Month")[["amount"]]
-                st.line_chart(
-                    spark_data,
-                    color=spark_color,
-                    height=80,
-                    use_container_width=True
+
+                spark_chart = (
+                    alt.Chart(spark_data).mark_line(color=spark_color).encode(x=alt.X("Month:N", axis=None), y=alt.Y("amount:Q", axis=None)).properties(height=60)
                 )
+                st.altair_chart(spark_chart, use_container_width=True)
             else:
                 st.write("No trend")
 
