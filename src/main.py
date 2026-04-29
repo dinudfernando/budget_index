@@ -87,5 +87,17 @@ def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.Dat
     watchlist_df.loc[budget_mask, "Used"] = (watchlist_df.loc[budget_mask, "Amount"]/ watchlist_df.loc[budget_mask, "Budget"] * 100)
     watchlist_df["Variance"] = watchlist_df["Amount"] - watchlist_df["Budget"]
 
+    watchlist_df["Status"] = "On Track"
+    watchlist_df.loc[watchlist_df["Variance"] > 0, "Status"] = "Over"
+    watchlist_df.loc[watchlist_df["Variance"] < 0, "Status"] = "Under"
+
+    # Columns in dashboard & Rounding, Sort
+    watchlist_df = watchlist_df[["Group", "Index", "Amount", "Budget", "Used", "Variance", "Status"]]
+    watchlist_df["Amount"] = watchlist_df["Amount"].round(2)
+    watchlist_df["Budget"] = watchlist_df["Budget"].round(2)
+    watchlist_df["Used"] = watchlist_df["Used"].round(1)
+    watchlist_df["Variance"] = watchlist_df["Variance"].round(2)
+
+    watchlist_df = watchlist_df.sort_values(["Group", "Index"])
 
     return watchlist_df
