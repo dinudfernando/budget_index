@@ -103,6 +103,15 @@ def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.Dat
 
 watchlist_df = build_watchlist(transactions_df, budgets_df)
 
+# Trend Data/ sparkline
+
+def build_trend_data(transactions: pd.DataFrame) -> pd.DataFrame:
+    trend_df = transactions.copy()
+
+    trend_df["Month"] = trend_df["date"].dt.to_period("M").astype(str)
+
+    return trend_df
+
 st.subheader("Watchlist")
 
 st.dataframe(
