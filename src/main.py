@@ -126,8 +126,6 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
         st.caption("Amount")
     with header3:
         st.caption("Budget %")
-    with header4:
-        st.caption("Trend")
 
     for row in group_rows.to_dict("records"):
 
