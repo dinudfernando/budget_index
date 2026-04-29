@@ -106,12 +106,26 @@ watchlist_df = build_watchlist(transactions_df, budgets_df)
 # Trend Data/ sparkline
 
 def build_trend_data(transactions: pd.DataFrame) -> pd.DataFrame:
+    """Builds data for sparkline under Watchlist"""
+    trend_df = build_trend_data(transactions_df)
+    def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.DataFrame) -> None:
+        """"""
+        group_rows = watchlist[watchlist["Group"] == group_name].copy()
+
+        for row in group_rows.to_dict("records"):
+            index_name = row["Index"]
+            category_name = index_name.replace(" Index", "")
+
+            category_trend = trends[trends["category"] == category_name].copy()
+
+            spark_color = "gray"
+
     trend_df = transactions.copy()
 
     trend_df["Month"] = trend_df["date"].dt.to_period("M").astype(str)
 
     # Grouping transactions
-    trend_df = trend_df.groupby(["category", "Month"], as_index=False)["amount"].sum().reset_index()
+    trend_df = trend_df.groupby(["category", "Month"])["amount"].sum().reset_index()
 
 
     return trend_df
