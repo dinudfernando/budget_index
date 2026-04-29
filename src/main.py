@@ -164,10 +164,10 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
                 st.success(f"Selected: {category_name}")
 
         with col2:
-            st.write(f"${row["Amount"]:,.2f}")
+            st.write(f"${row['Amount']:,.2f}")
         
         with col3:
-            st.write(f"${row["PctBudget"]:,.2f}")
+            st.write(f"{row['PctBudget']:,.1f}%")
 
         with col4:
             if len(category_trend) > 0:
