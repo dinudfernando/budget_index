@@ -116,12 +116,12 @@ trend_df = build_trend_data(transactions_df)
 def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.DataFrame) -> None:
     """Renders graphs for data groups"""
     st.markdown(f"### {group_name}")
+
     group_rows = watchlist[watchlist["Group"] == group_name].copy()
 
     for row in group_rows.to_dict("records"):
-        index_name = row["Index"]
-        category_name = index_name.replace(" Index", "")
 
+        category_name = row["Category"]        
         category_trend = trends[trends["category"] == category_name].copy()
 
         spark_color = "gray"
@@ -149,9 +149,9 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
         col1, col2, col3, col4 = st.columns([2.5,1,1,2])
 
         with col1:
-            if st.button(index_name, key=f"{group_name}_{index_name}", use_container_width=True):
-                st.session_state["selected_index"] = index_name
-                st.success(f"Selected: {index_name}")
+            if st.button(category_name, key=f"{group_name}_{category_name}", use_container_width=True):
+                st.session_state["selected_index"] = category_name
+                st.success(f"Selected: {category_name}")
 
         with col2:
             st.caption("Amount")
