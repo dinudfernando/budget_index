@@ -157,4 +157,22 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
         
         with col3:
             st.caption("Used")
-            st.write(f"${row["Amount"]:,.2f}")
+            st.write(f"${row["Used"]:,.2f}")
+
+        with col4:
+            st.caption("Trend")
+
+            if len(category_trend) > 0:
+                spark_data = category_trend.set_index("Month")[["amount"]]
+                st.line_chart(
+                    spark_data,
+                    color=spark_color,
+                    height=80,
+                    use_container_width=True
+                )
+            else:
+                st.write("No trend")
+
+st.subheader("Watchlist")
+render_watchlist_group("Income", watchlist_df, trend_df)
+render_watchlist_group("Expenses", watchlist_df, trend_df)
