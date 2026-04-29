@@ -74,7 +74,8 @@ def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.Dat
 
     watchlist_df = watchlist_df.rename(columns={
         "group": "Group",
-        "category"
+        "category": "Category"
+        "amount" : "Amount"
     })
 
     return watchlist_df
