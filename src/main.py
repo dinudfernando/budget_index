@@ -44,3 +44,9 @@ def load_budgets() -> pd.DataFrame:
     df["budget"] = pd.to_numeric(df["budget"])
     return df
 
+
+transactions_df = load_transactions()
+budgets_df = load_budgets()
+
+st.dataframe(transactions_df)
+st.dataframe(budgets_df)
