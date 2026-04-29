@@ -122,7 +122,7 @@ trend_df = build_trend_data(transactions_df)
 
 def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.DataFrame) -> None:
     """Renders graphs for data groups"""
-    st.markdown(f"###{group_name}")
+    st.markdown(f"### {group_name}")
     group_rows = watchlist[watchlist["Group"] == group_name].copy()
 
     for row in group_rows.to_dict("records"):
