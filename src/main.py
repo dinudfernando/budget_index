@@ -110,18 +110,9 @@ def build_trend_data(transactions: pd.DataFrame) -> pd.DataFrame:
 
     trend_df["Month"] = trend_df["date"].dt.to_period("M").astype(str)
 
+    # Grouping transactions
+    trend_df = trend_df.groupby(["category", "Month"], as_index=False)["amount"].sum().reset_index()
+
+
     return trend_df
 
-st.subheader("Watchlist")
-
-st.dataframe(
-    watchlist_df, 
-    use_container_width=True, 
-    hide_index=True, 
-    column_config={
-        "Amount": st.column_config.NumberColumn("Amount", format="$%.2f"),
-        "Budget": st.column_config.NumberColumn("Budget", format="$%.2f"),
-        "Used": st.column_config.NumberColumn("Used", format="%.1f%%"),
-        "Variance": st.column_config.NumberColumn("Variance", format="$ %.2f"),
-    }
-    )
