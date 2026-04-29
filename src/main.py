@@ -48,5 +48,9 @@ def load_budgets() -> pd.DataFrame:
 transactions_df = load_transactions()
 budgets_df = load_budgets()
 
-st.dataframe(transactions_df)
-st.dataframe(budgets_df)
+income_mask = transactions_df["group"] == "Income"
+expense_mask = transactions_df["group"] == "Expense"
+
+total_income = transactions_df.loc[income_mask, "amount"].sum()
+total_expness = transactions_df.loc[expense_mask, "amount"].sum()
+net_cashflow = total_income - total_expness
