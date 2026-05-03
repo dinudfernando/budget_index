@@ -23,7 +23,10 @@ st.set_page_config(
 # Row Styling(Under works)
 st.markdown("""
 <style>
-div.st
+div.stButton > button {
+    width: 100%
+    text-align            
+}
 
 </style>
 """)
