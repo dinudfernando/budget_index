@@ -114,13 +114,18 @@ st.divider()
 
 #Watchlist
 def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.DataFrame:
-    """"""
-    #Add months to this function
+    """Builds a watchlist based on the transaction and budget datasheets provided"""
+    
+    watch_df = transactions.copy()
+    watch_df["Month"] = watch_df["date"].dt.to_period("M")
+
+    latest_month = watch_df["Month"].max()
+    watch_df = watch_df[watch_df["Month"] == latest_month].copy()
+
     # All transactions grouped by category and total amounts for each
     grouped = (transactions.groupby(["group", "category"], as_index=False)["amount"].sum())
     
     watchlist_df = pd.merge(grouped, budgets, on="category", how="left")
-    latest_month = watchlist_df["Month"].max()
 
     
     watchlist_df = watchlist_df.rename(columns={
@@ -132,6 +137,7 @@ def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.Dat
 
     #Fill nulls with 0 in budget
     watchlist_df["Budget"] = watchlist_df["Budget"].fillna(0)
+    
     watchlist_df["PctBudget"] = 0.0
     budget_mask = watchlist_df["Budget"] > 0
     watchlist_df.loc[budget_mask, "PctBudget"] = (watchlist_df.loc[budget_mask, "Amount"]/ watchlist_df.loc[budget_mask, "Budget"] * 100)
