@@ -25,11 +25,17 @@ st.markdown("""
 <style>
 div.stButton > button {
     width: 100%
-    text-align            
+    text-align: left;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    color: #111827;
+    padding: 0.85rem 1rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);            
 }
 
 </style>
-""")
+""", unsafe_allow_html=True)
 st.title("At a Glance...")
 
 
