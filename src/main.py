@@ -20,6 +20,7 @@ st.set_page_config(
     layout="wide"
 )
 
+# Row Styling(Under works)
 st.markdown("""
 <style>
 div.st
@@ -63,6 +64,31 @@ total_income = transactions_df.loc[income_mask, "amount"].sum()
 total_expenses = transactions_df.loc[expense_mask, "amount"].sum()
 net_cashflow = total_income - total_expenses
 savings_rate = (net_cashflow / total_income * 100) if total_income > 0 else 0
+
+#  Pie chart summary
+pie_df = pd.DataFrame({
+    "Group": ["Income", "Expenses"],
+    "Amount": [total_income, total_expenses]
+})
+
+pie_chart = (
+    alt.Chart(pie_df)
+    .mark_arc(innerRadius=55)
+    .encode(
+        theta=alt.Theta("Amount:Q"),
+        color=alt.Color(
+            "Group:N",
+            scale=alt.Scale(
+                domain=["Income", "Expenses"],
+                range=["#34c759", "#ff3b30"]
+            ),
+        ),
+        tooltip=["Group:N", alt.Tooltip("Amount:Q", format=",.2f")]
+    )
+    .properties(height=220)
+)
+
+st.altair_chart(pie_chart, width="stretch")
 
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Total Income", f"${total_income:,.2f}")
