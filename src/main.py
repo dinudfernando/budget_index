@@ -120,12 +120,11 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
     group_rows = watchlist[watchlist["Group"] == group_name].copy()
 
     header1, header2, header3, header4 = st.columns([2.5,1,1,2])
-    with header1:
-        st.caption("Category")
+
     with header2:
-        st.caption("Amount")
+        st.caption("Expended")
     with header3:
-        st.caption("Budget %")
+        st.caption("Budget")
 
     for row in group_rows.to_dict("records"):
 
@@ -180,6 +179,5 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
             else:
                 st.write("No trend")
 
-st.subheader("Watchlist")
 render_watchlist_group("Income", watchlist_df, trend_df)
 render_watchlist_group("Expenses", watchlist_df, trend_df)
