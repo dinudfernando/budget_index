@@ -240,7 +240,11 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
             st.write(f"${row['Amount']:,.2f}")
         
         with col3:
-            st.write(f"{row['PctBudget']:,.1f}%")
+            pct_color = budget_pct_color(float(row["PctBudget"]))
+            st.markdown(
+                f"<span style='color:{pct_color}; font-weight:600;'>{row['PctBudget']:,.1f}%</span>",
+                unsafe_allow_html=True
+            )
 
         with col4:
             if len(category_trend) > 0:
