@@ -137,13 +137,15 @@ def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.Dat
 
     #Fill nulls with 0 in budget
     watchlist_df["Budget"] = watchlist_df["Budget"].fillna(0)
-    
+
     watchlist_df["PctBudget"] = 0.0
     budget_mask = watchlist_df["Budget"] > 0
     watchlist_df.loc[budget_mask, "PctBudget"] = (watchlist_df.loc[budget_mask, "Amount"]/ watchlist_df.loc[budget_mask, "Budget"] * 100)
 
     # Columns in dashboard & Rounding, Sort
     watchlist_df = watchlist_df[["Group", "Category", "Amount", "PctBudget"]]
+
+    # Rounding amounts
     watchlist_df["Amount"] = watchlist_df["Amount"].round(2)
     watchlist_df["PctBudget"] = watchlist_df["PctBudget"].round(1)
 
