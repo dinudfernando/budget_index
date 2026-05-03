@@ -100,6 +100,8 @@ st.divider()
 
 #Watchlist
 def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.DataFrame:
+
+    #Add months to this function
     # All transactions grouped by category and total amounts for each
     grouped = (transactions.groupby(["group", "category"], as_index=False)["amount"].sum())
     
