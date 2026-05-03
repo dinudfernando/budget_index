@@ -119,7 +119,6 @@ def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.Dat
     
     watch_df = transactions.copy()
     watch_df["Month"] = watch_df["date"].dt.to_period("M")
-
     latest_month = watch_df["Month"].max()
     watch_df = watch_df[watch_df["Month"] == latest_month].copy()
 
