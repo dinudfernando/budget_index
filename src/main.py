@@ -20,6 +20,12 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+div.st
+
+</style>
+""")
 st.title("At a Glance...")
 
 
