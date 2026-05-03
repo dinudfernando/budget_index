@@ -175,20 +175,16 @@ col4.metric("Savings Rate", f"{savings_rate:,.2f}%")
 st.divider()
 
 #Watchlist
-def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.DataFrame:
+def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame, tf: str) -> pd.DataFrame:
     """Builds a watchlist based on the transaction and budget datasheets provided"""
     
     watch_df = transactions.copy()
-    watch_df["Month"] = watch_df["date"].dt.to_period("M")
-    latest_month = watch_df["Month"].max()
-    watch_df = watch_df[watch_df["Month"] == latest_month].copy()
 
     # All transactions grouped by category and total amounts for each
     grouped = watch_df.groupby(["group", "category"], as_index=False)["amount"].sum()
     
     watchlist_df = pd.merge(grouped, budgets, on="category", how="left")
 
-    
     watchlist_df = watchlist_df.rename(columns={
         "group": "Group",
         "category": "Category",
@@ -198,6 +194,7 @@ def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.Dat
 
     #Fill nulls with 0 in budget
     watchlist_df["Budget"] = watchlist_df["Budget"].fillna(0)
+    watchlist_df["Budget"] = watchlist_df["Budget"] * budget_multiplier(tf)
 
     watchlist_df["PctBudget"] = 0.0
     budget_mask = watchlist_df["Budget"] > 0
@@ -215,7 +212,7 @@ def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.Dat
 
     return watchlist_df
 
-watchlist_df = build_watchlist(transactions_df, budgets_df)
+watchlist_df = build_watchlist(transactions_df, budgets_df, tf_value)
 
 # Trend Data/ sparkline
 def build_trend_data(transactions: pd.DataFrame) -> pd.DataFrame:
