@@ -148,7 +148,24 @@ def build_trend_data(transactions: pd.DataFrame) -> pd.DataFrame:
 
     return trend_df
 
-trend_df = build_trend_data(transactions_df)            
+trend_df = build_trend_data(transactions_df)
+
+def budget_pct_color(pct: float) -> str:
+    """Returns color for budget usage percentage"""
+    if pct >= 200:
+        return "#7f1d1d"   # dark red
+    elif pct >= 150:
+        return "#dc2626"   # red
+    elif pct >= 100:
+        return "#fca5a5"   # light red
+    elif pct >= 85:
+        return "#facc15"   # yellow
+    elif pct >= 60:
+        return "#86efac"   # light green
+    elif pct >= 30:
+        return "#22c55e"   # green
+    else:
+        return "#166534"   # dark green
 
 def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.DataFrame) -> None:
     """Renders graphs for data groups"""
