@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import altair as alt
-
+from typing import Optional
 
 # Path Helper
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -65,6 +65,36 @@ def load_transactions() -> pd.DataFrame:
     df["amount"] = pd.to_numeric(df["amount"])
     return df
 
+
+# Timeline Filter
+
+def filter_by_timeframe(df: pd.DataFrame, tf: str) -> pd.DataFrame:
+    """Filter transactions by the selected timeframe."""
+
+    if tf is None:
+        return df
+    
+    df = df.copy()
+    df = df.sort_values("date")
+
+    end = df["date"].max()
+
+    if tf == "W":
+        start = end - pd.Timedelta(days=7)
+    elif tf == "M":
+        start = end - pd.DateOffset(months=1)
+    elif tf == "Q":
+        start = end - pd.DateOffset(months=3)
+    elif tf == "Y":
+        start = end - pd.DateOffset(years=1)
+    elif tf == "2Y":
+        start = end - pd.DateOffset(years=2)
+    else:  # "5Y"
+        start = end - pd.DateOffset(years=5)
+
+    return df[df["date"].between(start, end)]
+
+
 # Budget Load
 
 def load_budgets() -> pd.DataFrame:
@@ -78,6 +108,12 @@ def load_budgets() -> pd.DataFrame:
 
 
 transactions_df = load_transactions()
+tf_value = tf or "M"
+
+# Filtered time frame
+transactions_df = filter_by_timeframe(transactions_df, tf_value)
+                                      
+
 budgets_df = load_budgets()
 
 income_mask = transactions_df["group"] == "Income"
