@@ -44,6 +44,15 @@ div.stButton > button:hover {
 
 st.title("At a Glance...")
 
+# Timeframe Switcher
+TIMEFRAMES = ["W", "M", "Q", "Y", "2Y", "5Y"]
+
+tf = st.segmented_control(
+    "Timeframe",
+    TIMEFRAMES,
+    default="M",
+    help="Change the window used for all charts and stats"
+)
 
 # Data Load
 def load_transactions() -> pd.DataFrame:
