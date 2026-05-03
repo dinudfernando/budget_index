@@ -34,6 +34,11 @@ div.stButton > button {
     box-shadow: 0 1px 2px rgba(0,0,0,0.04);            
 }
 
+div.stButton > button:hover {
+    border-color: #d1d5db;
+    background: #f9fafb;
+}
+            
 </style>
 """, unsafe_allow_html=True)
 st.title("At a Glance...")
