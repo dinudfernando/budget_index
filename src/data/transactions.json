@@ -1,62 +1,5042 @@
 [
-  {"date": "2026-01-03", "group": "Income", "category": "Salary", "amount": 3200, "tag": "Paycheck"},
-  {"date": "2026-01-10", "group": "Income", "category": "Freelance", "amount": 420, "tag": "Design"},
-  {"date": "2026-01-29", "group": "Income", "category": "Other Income", "amount": 90, "tag": "Cashback"},
-
-  {"date": "2026-01-01", "group": "Expenses", "category": "Housing", "amount": 1200, "tag": "Rent"},
-  {"date": "2026-01-05", "group": "Expenses", "category": "Food", "amount": 185, "tag": "Groceries"},
-  {"date": "2026-01-07", "group": "Expenses", "category": "Transport", "amount": 85, "tag": "Gas"},
-  {"date": "2026-01-09", "group": "Expenses", "category": "Utilities", "amount": 140, "tag": "Electric"},
-  {"date": "2026-01-12", "group": "Expenses", "category": "Entertainment", "amount": 65, "tag": "Movies"},
-  {"date": "2026-01-15", "group": "Expenses", "category": "Food", "amount": 72, "tag": "Dining"},
-  {"date": "2026-01-19", "group": "Expenses", "category": "Subscriptions", "amount": 28, "tag": "Streaming"},
-  {"date": "2026-01-22", "group": "Expenses", "category": "Health", "amount": 40, "tag": "Pharmacy"},
-  {"date": "2026-01-24", "group": "Expenses", "category": "Savings", "amount": 300, "tag": "Emergency Fund"},
-  {"date": "2026-01-27", "group": "Expenses", "category": "Transport", "amount": 42, "tag": "Train"},
-
-  {"date": "2026-02-03", "group": "Income", "category": "Salary", "amount": 3200, "tag": "Paycheck"},
-  {"date": "2026-02-14", "group": "Income", "category": "Freelance", "amount": 510, "tag": "Coding"},
-  {"date": "2026-02-26", "group": "Income", "category": "Other Income", "amount": 75, "tag": "Refund"},
-
-  {"date": "2026-02-01", "group": "Expenses", "category": "Housing", "amount": 1200, "tag": "Rent"},
-  {"date": "2026-02-04", "group": "Expenses", "category": "Food", "amount": 210, "tag": "Groceries"},
-  {"date": "2026-02-06", "group": "Expenses", "category": "Transport", "amount": 95, "tag": "Gas"},
-  {"date": "2026-02-08", "group": "Expenses", "category": "Utilities", "amount": 155, "tag": "Electric"},
-  {"date": "2026-02-11", "group": "Expenses", "category": "Entertainment", "amount": 110, "tag": "Concert"},
-  {"date": "2026-02-13", "group": "Expenses", "category": "Food", "amount": 88, "tag": "Dining"},
-  {"date": "2026-02-16", "group": "Expenses", "category": "Subscriptions", "amount": 28, "tag": "Streaming"},
-  {"date": "2026-02-18", "group": "Expenses", "category": "Health", "amount": 25, "tag": "Clinic"},
-  {"date": "2026-02-21", "group": "Expenses", "category": "Savings", "amount": 350, "tag": "Emergency Fund"},
-  {"date": "2026-02-25", "group": "Expenses", "category": "Shopping", "amount": 95, "tag": "Clothes"},
-
-  {"date": "2026-03-03", "group": "Income", "category": "Salary", "amount": 3200, "tag": "Paycheck"},
-  {"date": "2026-03-12", "group": "Income", "category": "Freelance", "amount": 360, "tag": "Tutoring"},
-  {"date": "2026-03-28", "group": "Income", "category": "Other Income", "amount": 140, "tag": "Gift"},
-
-  {"date": "2026-03-01", "group": "Expenses", "category": "Housing", "amount": 1200, "tag": "Rent"},
-  {"date": "2026-03-05", "group": "Expenses", "category": "Food", "amount": 230, "tag": "Groceries"},
-  {"date": "2026-03-06", "group": "Expenses", "category": "Transport", "amount": 78, "tag": "Gas"},
-  {"date": "2026-03-09", "group": "Expenses", "category": "Utilities", "amount": 165, "tag": "Electric"},
-  {"date": "2026-03-10", "group": "Expenses", "category": "Entertainment", "amount": 72, "tag": "Games"},
-  {"date": "2026-03-14", "group": "Expenses", "category": "Food", "amount": 94, "tag": "Dining"},
-  {"date": "2026-03-17", "group": "Expenses", "category": "Subscriptions", "amount": 28, "tag": "Streaming"},
-  {"date": "2026-03-20", "group": "Expenses", "category": "Health", "amount": 55, "tag": "Dental"},
-  {"date": "2026-03-23", "group": "Expenses", "category": "Savings", "amount": 400, "tag": "Emergency Fund"},
-  {"date": "2026-03-27", "group": "Expenses", "category": "Shopping", "amount": 120, "tag": "Shoes"},
-
-  {"date": "2026-04-03", "group": "Income", "category": "Salary", "amount": 4200, "tag": "Paycheck"},
-  {"date": "2026-04-09", "group": "Income", "category": "Freelance", "amount": 470, "tag": "Web Work"},
-  {"date": "2026-04-22", "group": "Income", "category": "Other Income", "amount": 125, "tag": "Refund"},
-
-  {"date": "2026-04-01", "group": "Expenses", "category": "Housing", "amount": 1200, "tag": "Rent"},
-  {"date": "2026-04-04", "group": "Expenses", "category": "Food", "amount": 210, "tag": "Groceries"},
-  {"date": "2026-04-08", "group": "Expenses", "category": "Transport", "amount": 95, "tag": "Gas"},
-  {"date": "2026-04-12", "group": "Expenses", "category": "Entertainment", "amount": 140, "tag": "Streaming"},
-  {"date": "2026-04-15", "group": "Expenses", "category": "Utilities", "amount": 180, "tag": "Electric"},
-  {"date": "2026-04-18", "group": "Expenses", "category": "Food", "amount": 75, "tag": "Dining"},
-  {"date": "2026-04-19", "group": "Expenses", "category": "Subscriptions", "amount": 28, "tag": "Streaming"},
-  {"date": "2026-04-20", "group": "Expenses", "category": "Transport", "amount": 60, "tag": "Train"},
-  {"date": "2026-04-24", "group": "Expenses", "category": "Health", "amount": 45, "tag": "Pharmacy"},
-  {"date": "2026-04-26", "group": "Expenses", "category": "Savings", "amount": 380, "tag": "Emergency Fund"},
-  {"date": "2026-04-27", "group": "Expenses", "category": "Shopping", "amount": 85, "tag": "Accessories"}
+  {
+    "date": "2021-05-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1200,
+    "tag": "Rent"
+  },
+  {
+    "date": "2021-05-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3200,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2021-05-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 404,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2021-05-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 143,
+    "tag": "Transit"
+  },
+  {
+    "date": "2021-05-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 186,
+    "tag": "Electric"
+  },
+  {
+    "date": "2021-05-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 462,
+    "tag": "Design"
+  },
+  {
+    "date": "2021-05-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 137,
+    "tag": "Movies"
+  },
+  {
+    "date": "2021-05-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2021-05-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 35,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2021-05-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 295,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2021-05-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 60,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2021-05-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 88,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2021-06-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1202,
+    "tag": "Rent"
+  },
+  {
+    "date": "2021-06-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3213,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2021-06-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 347,
+    "tag": "Dining"
+  },
+  {
+    "date": "2021-06-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 179,
+    "tag": "Gas"
+  },
+  {
+    "date": "2021-06-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 185,
+    "tag": "Water"
+  },
+  {
+    "date": "2021-06-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 376,
+    "tag": "Coding"
+  },
+  {
+    "date": "2021-06-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 105,
+    "tag": "Movies"
+  },
+  {
+    "date": "2021-06-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Music"
+  },
+  {
+    "date": "2021-06-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 66,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2021-06-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 298,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2021-06-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 69,
+    "tag": "Gift"
+  },
+  {
+    "date": "2021-06-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 101,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2021-07-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1205,
+    "tag": "Rent"
+  },
+  {
+    "date": "2021-07-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3226,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2021-07-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 331,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2021-07-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 155,
+    "tag": "Transit"
+  },
+  {
+    "date": "2021-07-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 165,
+    "tag": "Internet"
+  },
+  {
+    "date": "2021-07-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 516,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2021-07-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 125,
+    "tag": "Movies"
+  },
+  {
+    "date": "2021-07-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2021-07-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 26,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2021-07-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 333,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2021-07-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 109,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2021-07-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 95,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2021-08-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1207,
+    "tag": "Rent"
+  },
+  {
+    "date": "2021-08-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3238,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2021-08-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 320,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2021-08-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 163,
+    "tag": "Parking"
+  },
+  {
+    "date": "2021-08-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 192,
+    "tag": "Water"
+  },
+  {
+    "date": "2021-08-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 408,
+    "tag": "Design"
+  },
+  {
+    "date": "2021-08-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 127,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2021-08-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2021-08-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 26,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2021-08-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 296,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2021-08-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 104,
+    "tag": "Gift"
+  },
+  {
+    "date": "2021-08-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 74,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2021-09-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1210,
+    "tag": "Rent"
+  },
+  {
+    "date": "2021-09-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3251,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2021-09-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 332,
+    "tag": "Dining"
+  },
+  {
+    "date": "2021-09-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 153,
+    "tag": "Transit"
+  },
+  {
+    "date": "2021-09-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 160,
+    "tag": "Water"
+  },
+  {
+    "date": "2021-09-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 367,
+    "tag": "Web Work"
+  },
+  {
+    "date": "2021-09-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 121,
+    "tag": "Concert"
+  },
+  {
+    "date": "2021-09-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2021-09-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 47,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2021-09-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 440,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2021-09-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 100,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2021-09-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 95,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2021-10-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1212,
+    "tag": "Rent"
+  },
+  {
+    "date": "2021-10-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3264,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2021-10-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 290,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2021-10-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 149,
+    "tag": "Transit"
+  },
+  {
+    "date": "2021-10-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 156,
+    "tag": "Water"
+  },
+  {
+    "date": "2021-10-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 583,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2021-10-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 76,
+    "tag": "Concert"
+  },
+  {
+    "date": "2021-10-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Music"
+  },
+  {
+    "date": "2021-10-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 53,
+    "tag": "Dental"
+  },
+  {
+    "date": "2021-10-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 383,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2021-10-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 168,
+    "tag": "Refund"
+  },
+  {
+    "date": "2021-10-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 74,
+    "tag": "Clothes"
+  },
+  {
+    "date": "2021-11-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1214,
+    "tag": "Rent"
+  },
+  {
+    "date": "2021-11-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3277,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2021-11-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 321,
+    "tag": "Dining"
+  },
+  {
+    "date": "2021-11-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 167,
+    "tag": "Gas"
+  },
+  {
+    "date": "2021-11-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 177,
+    "tag": "Electric"
+  },
+  {
+    "date": "2021-11-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 504,
+    "tag": "Web Work"
+  },
+  {
+    "date": "2021-11-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 91,
+    "tag": "Movies"
+  },
+  {
+    "date": "2021-11-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Music"
+  },
+  {
+    "date": "2021-11-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 34,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2021-11-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 452,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2021-11-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 153,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2021-11-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 90,
+    "tag": "Clothes"
+  },
+  {
+    "date": "2021-12-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1217,
+    "tag": "Rent"
+  },
+  {
+    "date": "2021-12-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3290,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2021-12-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 298,
+    "tag": "Dining"
+  },
+  {
+    "date": "2021-12-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 155,
+    "tag": "Transit"
+  },
+  {
+    "date": "2021-12-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 166,
+    "tag": "Internet"
+  },
+  {
+    "date": "2021-12-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 659,
+    "tag": "Coding"
+  },
+  {
+    "date": "2021-12-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 88,
+    "tag": "Movies"
+  },
+  {
+    "date": "2021-12-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2021-12-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 29,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2021-12-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 429,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2021-12-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 120,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2021-12-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 139,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2022-01-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1219,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-01-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3302,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2022-01-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 312,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2022-01-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 212,
+    "tag": "Parking"
+  },
+  {
+    "date": "2022-01-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 180,
+    "tag": "Water"
+  },
+  {
+    "date": "2022-01-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 593,
+    "tag": "Coding"
+  },
+  {
+    "date": "2022-01-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 117,
+    "tag": "Concert"
+  },
+  {
+    "date": "2022-01-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2022-01-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 81,
+    "tag": "Dental"
+  },
+  {
+    "date": "2022-01-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 413,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2022-01-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 102,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2022-01-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 77,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2022-02-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1222,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-02-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3315,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2022-02-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 387,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2022-02-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 153,
+    "tag": "Parking"
+  },
+  {
+    "date": "2022-02-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 194,
+    "tag": "Internet"
+  },
+  {
+    "date": "2022-02-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 560,
+    "tag": "Coding"
+  },
+  {
+    "date": "2022-02-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 87,
+    "tag": "Concert"
+  },
+  {
+    "date": "2022-02-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2022-02-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 23,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2022-02-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 285,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2022-02-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 120,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2022-02-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 75,
+    "tag": "Clothes"
+  },
+  {
+    "date": "2022-03-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1224,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-03-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3328,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2022-03-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 361,
+    "tag": "Dining"
+  },
+  {
+    "date": "2022-03-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 188,
+    "tag": "Train"
+  },
+  {
+    "date": "2022-03-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 204,
+    "tag": "Internet"
+  },
+  {
+    "date": "2022-03-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 431,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2022-03-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 63,
+    "tag": "Concert"
+  },
+  {
+    "date": "2022-03-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2022-03-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 65,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2022-03-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 439,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2022-03-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 66,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2022-03-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 120,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2022-04-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1226,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-04-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3341,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2022-04-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 305,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2022-04-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 183,
+    "tag": "Train"
+  },
+  {
+    "date": "2022-04-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 176,
+    "tag": "Electric"
+  },
+  {
+    "date": "2022-04-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 594,
+    "tag": "Coding"
+  },
+  {
+    "date": "2022-04-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 114,
+    "tag": "Movies"
+  },
+  {
+    "date": "2022-04-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Music"
+  },
+  {
+    "date": "2022-04-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 61,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2022-04-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 384,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2022-04-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 51,
+    "tag": "Refund"
+  },
+  {
+    "date": "2022-04-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 93,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2022-05-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1229,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-05-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3354,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2022-05-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 327,
+    "tag": "Dining"
+  },
+  {
+    "date": "2022-05-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 176,
+    "tag": "Transit"
+  },
+  {
+    "date": "2022-05-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 201,
+    "tag": "Water"
+  },
+  {
+    "date": "2022-05-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 497,
+    "tag": "Design"
+  },
+  {
+    "date": "2022-05-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 84,
+    "tag": "Games"
+  },
+  {
+    "date": "2022-05-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Music"
+  },
+  {
+    "date": "2022-05-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 57,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2022-05-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 426,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2022-05-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 153,
+    "tag": "Gift"
+  },
+  {
+    "date": "2022-05-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 55,
+    "tag": "Clothes"
+  },
+  {
+    "date": "2022-06-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1231,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-06-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3366,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2022-06-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 316,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2022-06-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 173,
+    "tag": "Gas"
+  },
+  {
+    "date": "2022-06-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 198,
+    "tag": "Electric"
+  },
+  {
+    "date": "2022-06-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 635,
+    "tag": "Design"
+  },
+  {
+    "date": "2022-06-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 105,
+    "tag": "Games"
+  },
+  {
+    "date": "2022-06-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2022-06-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 43,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2022-06-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 371,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2022-06-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 141,
+    "tag": "Refund"
+  },
+  {
+    "date": "2022-06-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 100,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2022-07-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1234,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-07-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3379,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2022-07-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 362,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2022-07-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 176,
+    "tag": "Parking"
+  },
+  {
+    "date": "2022-07-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 193,
+    "tag": "Water"
+  },
+  {
+    "date": "2022-07-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 537,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2022-07-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 117,
+    "tag": "Games"
+  },
+  {
+    "date": "2022-07-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2022-07-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 51,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2022-07-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 373,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2022-07-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 139,
+    "tag": "Gift"
+  },
+  {
+    "date": "2022-07-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 93,
+    "tag": "Clothes"
+  },
+  {
+    "date": "2022-08-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1236,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-08-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3392,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2022-08-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 289,
+    "tag": "Dining"
+  },
+  {
+    "date": "2022-08-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 189,
+    "tag": "Train"
+  },
+  {
+    "date": "2022-08-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 216,
+    "tag": "Internet"
+  },
+  {
+    "date": "2022-08-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 484,
+    "tag": "Coding"
+  },
+  {
+    "date": "2022-08-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 136,
+    "tag": "Games"
+  },
+  {
+    "date": "2022-08-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Music"
+  },
+  {
+    "date": "2022-08-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 31,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2022-08-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 405,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2022-08-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 81,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2022-08-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 109,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2022-09-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1238,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-09-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3405,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2022-09-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 391,
+    "tag": "Dining"
+  },
+  {
+    "date": "2022-09-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 168,
+    "tag": "Gas"
+  },
+  {
+    "date": "2022-09-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 172,
+    "tag": "Internet"
+  },
+  {
+    "date": "2022-09-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 411,
+    "tag": "Coding"
+  },
+  {
+    "date": "2022-09-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 87,
+    "tag": "Concert"
+  },
+  {
+    "date": "2022-09-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Music"
+  },
+  {
+    "date": "2022-09-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 27,
+    "tag": "Dental"
+  },
+  {
+    "date": "2022-09-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 344,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2022-09-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 127,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2022-09-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 80,
+    "tag": "Clothes"
+  },
+  {
+    "date": "2022-10-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1241,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-10-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3418,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2022-10-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 304,
+    "tag": "Dining"
+  },
+  {
+    "date": "2022-10-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 138,
+    "tag": "Train"
+  },
+  {
+    "date": "2022-10-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 202,
+    "tag": "Water"
+  },
+  {
+    "date": "2022-10-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 396,
+    "tag": "Design"
+  },
+  {
+    "date": "2022-10-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 79,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2022-10-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Music"
+  },
+  {
+    "date": "2022-10-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 30,
+    "tag": "Dental"
+  },
+  {
+    "date": "2022-10-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 354,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2022-10-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 159,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2022-10-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 132,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2022-11-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1243,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-11-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3430,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2022-11-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 385,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2022-11-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 186,
+    "tag": "Parking"
+  },
+  {
+    "date": "2022-11-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 204,
+    "tag": "Water"
+  },
+  {
+    "date": "2022-11-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 378,
+    "tag": "Design"
+  },
+  {
+    "date": "2022-11-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 63,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2022-11-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2022-11-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 78,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2022-11-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 292,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2022-11-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 129,
+    "tag": "Gift"
+  },
+  {
+    "date": "2022-11-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 128,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2022-12-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1246,
+    "tag": "Rent"
+  },
+  {
+    "date": "2022-12-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3443,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2022-12-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 304,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2022-12-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 160,
+    "tag": "Parking"
+  },
+  {
+    "date": "2022-12-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 162,
+    "tag": "Electric"
+  },
+  {
+    "date": "2022-12-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 656,
+    "tag": "Design"
+  },
+  {
+    "date": "2022-12-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 123,
+    "tag": "Movies"
+  },
+  {
+    "date": "2022-12-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2022-12-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 40,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2022-12-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 368,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2022-12-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 166,
+    "tag": "Refund"
+  },
+  {
+    "date": "2022-12-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 66,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2023-01-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1248,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-01-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3456,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2023-01-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 354,
+    "tag": "Dining"
+  },
+  {
+    "date": "2023-01-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 207,
+    "tag": "Parking"
+  },
+  {
+    "date": "2023-01-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 232,
+    "tag": "Electric"
+  },
+  {
+    "date": "2023-01-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 437,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2023-01-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 83,
+    "tag": "Games"
+  },
+  {
+    "date": "2023-01-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2023-01-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 35,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2023-01-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 320,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2023-01-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 98,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2023-01-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 68,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2023-02-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1250,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-02-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3469,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2023-02-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 369,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2023-02-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 191,
+    "tag": "Parking"
+  },
+  {
+    "date": "2023-02-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 153,
+    "tag": "Electric"
+  },
+  {
+    "date": "2023-02-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 496,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2023-02-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 72,
+    "tag": "Movies"
+  },
+  {
+    "date": "2023-02-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2023-02-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 39,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2023-02-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 281,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2023-02-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 47,
+    "tag": "Gift"
+  },
+  {
+    "date": "2023-02-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 83,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2023-03-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1253,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-03-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3482,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2023-03-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 331,
+    "tag": "Dining"
+  },
+  {
+    "date": "2023-03-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 198,
+    "tag": "Train"
+  },
+  {
+    "date": "2023-03-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 144,
+    "tag": "Electric"
+  },
+  {
+    "date": "2023-03-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 360,
+    "tag": "Consulting"
+  },
+  {
+    "date": "2023-03-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 129,
+    "tag": "Games"
+  },
+  {
+    "date": "2023-03-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Music"
+  },
+  {
+    "date": "2023-03-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 30,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2023-03-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 383,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2023-03-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 90,
+    "tag": "Refund"
+  },
+  {
+    "date": "2023-03-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 85,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2023-04-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1255,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-04-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3494,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2023-04-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 407,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2023-04-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 193,
+    "tag": "Train"
+  },
+  {
+    "date": "2023-04-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 180,
+    "tag": "Electric"
+  },
+  {
+    "date": "2023-04-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 407,
+    "tag": "Coding"
+  },
+  {
+    "date": "2023-04-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 94,
+    "tag": "Movies"
+  },
+  {
+    "date": "2023-04-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 28,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2023-04-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 67,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2023-04-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 368,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2023-04-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 134,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2023-04-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 132,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2023-05-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1258,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-05-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3507,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2023-05-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 380,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2023-05-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 186,
+    "tag": "Gas"
+  },
+  {
+    "date": "2023-05-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 194,
+    "tag": "Water"
+  },
+  {
+    "date": "2023-05-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 662,
+    "tag": "Web Work"
+  },
+  {
+    "date": "2023-05-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 99,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2023-05-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2023-05-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 21,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2023-05-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 420,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2023-05-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 89,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2023-05-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 117,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2023-06-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1260,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-06-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3520,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2023-06-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 400,
+    "tag": "Dining"
+  },
+  {
+    "date": "2023-06-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 141,
+    "tag": "Parking"
+  },
+  {
+    "date": "2023-06-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 213,
+    "tag": "Water"
+  },
+  {
+    "date": "2023-06-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 590,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2023-06-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 81,
+    "tag": "Concert"
+  },
+  {
+    "date": "2023-06-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Music"
+  },
+  {
+    "date": "2023-06-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 24,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2023-06-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 391,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2023-06-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 67,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2023-06-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 68,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2023-07-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1262,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-07-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3533,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2023-07-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 370,
+    "tag": "Dining"
+  },
+  {
+    "date": "2023-07-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 159,
+    "tag": "Gas"
+  },
+  {
+    "date": "2023-07-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 194,
+    "tag": "Internet"
+  },
+  {
+    "date": "2023-07-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 379,
+    "tag": "Design"
+  },
+  {
+    "date": "2023-07-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 97,
+    "tag": "Movies"
+  },
+  {
+    "date": "2023-07-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2023-07-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 52,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2023-07-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 301,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2023-07-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 75,
+    "tag": "Refund"
+  },
+  {
+    "date": "2023-07-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 130,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2023-08-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1265,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-08-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3546,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2023-08-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 297,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2023-08-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 177,
+    "tag": "Transit"
+  },
+  {
+    "date": "2023-08-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 231,
+    "tag": "Internet"
+  },
+  {
+    "date": "2023-08-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 673,
+    "tag": "Design"
+  },
+  {
+    "date": "2023-08-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 67,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2023-08-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2023-08-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 75,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2023-08-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 369,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2023-08-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 90,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2023-08-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 130,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2023-09-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1267,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-09-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3558,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2023-09-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 315,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2023-09-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 161,
+    "tag": "Gas"
+  },
+  {
+    "date": "2023-09-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 207,
+    "tag": "Water"
+  },
+  {
+    "date": "2023-09-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 575,
+    "tag": "Coding"
+  },
+  {
+    "date": "2023-09-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 55,
+    "tag": "Concert"
+  },
+  {
+    "date": "2023-09-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2023-09-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 71,
+    "tag": "Dental"
+  },
+  {
+    "date": "2023-09-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 427,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2023-09-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 93,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2023-09-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 61,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2023-10-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1270,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-10-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3571,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2023-10-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 361,
+    "tag": "Dining"
+  },
+  {
+    "date": "2023-10-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 204,
+    "tag": "Parking"
+  },
+  {
+    "date": "2023-10-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 160,
+    "tag": "Electric"
+  },
+  {
+    "date": "2023-10-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 483,
+    "tag": "Consulting"
+  },
+  {
+    "date": "2023-10-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 60,
+    "tag": "Concert"
+  },
+  {
+    "date": "2023-10-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2023-10-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 65,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2023-10-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 391,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2023-10-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 153,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2023-10-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 63,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2023-11-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1272,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-11-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3584,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2023-11-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 280,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2023-11-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 194,
+    "tag": "Transit"
+  },
+  {
+    "date": "2023-11-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 174,
+    "tag": "Internet"
+  },
+  {
+    "date": "2023-11-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 648,
+    "tag": "Coding"
+  },
+  {
+    "date": "2023-11-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 123,
+    "tag": "Concert"
+  },
+  {
+    "date": "2023-11-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2023-11-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 64,
+    "tag": "Dental"
+  },
+  {
+    "date": "2023-11-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 330,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2023-11-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 162,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2023-11-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 54,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2023-12-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1274,
+    "tag": "Rent"
+  },
+  {
+    "date": "2023-12-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3597,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2023-12-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 294,
+    "tag": "Dining"
+  },
+  {
+    "date": "2023-12-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 187,
+    "tag": "Transit"
+  },
+  {
+    "date": "2023-12-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 142,
+    "tag": "Electric"
+  },
+  {
+    "date": "2023-12-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 488,
+    "tag": "Web Work"
+  },
+  {
+    "date": "2023-12-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 100,
+    "tag": "Games"
+  },
+  {
+    "date": "2023-12-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2023-12-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 75,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2023-12-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 376,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2023-12-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 71,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2023-12-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 91,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2024-01-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1277,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-01-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3610,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2024-01-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 396,
+    "tag": "Dining"
+  },
+  {
+    "date": "2024-01-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 196,
+    "tag": "Parking"
+  },
+  {
+    "date": "2024-01-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 185,
+    "tag": "Water"
+  },
+  {
+    "date": "2024-01-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 535,
+    "tag": "Consulting"
+  },
+  {
+    "date": "2024-01-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 92,
+    "tag": "Concert"
+  },
+  {
+    "date": "2024-01-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2024-01-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 56,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2024-01-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 346,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2024-01-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 82,
+    "tag": "Refund"
+  },
+  {
+    "date": "2024-01-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 80,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2024-02-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1279,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-02-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3622,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2024-02-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 414,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2024-02-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 204,
+    "tag": "Transit"
+  },
+  {
+    "date": "2024-02-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 224,
+    "tag": "Electric"
+  },
+  {
+    "date": "2024-02-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 642,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2024-02-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 57,
+    "tag": "Movies"
+  },
+  {
+    "date": "2024-02-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2024-02-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 23,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2024-02-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 404,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2024-02-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 90,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2024-02-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 131,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2024-03-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1282,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-03-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3635,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2024-03-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 420,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2024-03-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 193,
+    "tag": "Gas"
+  },
+  {
+    "date": "2024-03-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 191,
+    "tag": "Water"
+  },
+  {
+    "date": "2024-03-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 607,
+    "tag": "Web Work"
+  },
+  {
+    "date": "2024-03-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 124,
+    "tag": "Concert"
+  },
+  {
+    "date": "2024-03-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2024-03-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 51,
+    "tag": "Dental"
+  },
+  {
+    "date": "2024-03-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 377,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2024-03-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 69,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2024-03-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 54,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2024-04-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1284,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-04-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3648,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2024-04-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 351,
+    "tag": "Dining"
+  },
+  {
+    "date": "2024-04-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 153,
+    "tag": "Train"
+  },
+  {
+    "date": "2024-04-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 187,
+    "tag": "Water"
+  },
+  {
+    "date": "2024-04-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 580,
+    "tag": "Consulting"
+  },
+  {
+    "date": "2024-04-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 56,
+    "tag": "Games"
+  },
+  {
+    "date": "2024-04-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2024-04-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 41,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2024-04-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 361,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2024-04-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 55,
+    "tag": "Refund"
+  },
+  {
+    "date": "2024-04-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 136,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2024-05-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1286,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-05-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3661,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2024-05-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 332,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2024-05-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 189,
+    "tag": "Gas"
+  },
+  {
+    "date": "2024-05-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 215,
+    "tag": "Internet"
+  },
+  {
+    "date": "2024-05-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 377,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2024-05-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 75,
+    "tag": "Movies"
+  },
+  {
+    "date": "2024-05-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2024-05-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 23,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2024-05-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 339,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2024-05-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 65,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2024-05-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 88,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2024-06-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1289,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-06-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3674,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2024-06-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 390,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2024-06-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 159,
+    "tag": "Train"
+  },
+  {
+    "date": "2024-06-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 217,
+    "tag": "Internet"
+  },
+  {
+    "date": "2024-06-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 601,
+    "tag": "Coding"
+  },
+  {
+    "date": "2024-06-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 100,
+    "tag": "Movies"
+  },
+  {
+    "date": "2024-06-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2024-06-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 33,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2024-06-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 319,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2024-06-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 65,
+    "tag": "Gift"
+  },
+  {
+    "date": "2024-06-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 88,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2024-07-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1291,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-07-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3686,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2024-07-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 397,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2024-07-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 207,
+    "tag": "Parking"
+  },
+  {
+    "date": "2024-07-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 212,
+    "tag": "Water"
+  },
+  {
+    "date": "2024-07-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 491,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2024-07-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 145,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2024-07-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2024-07-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 82,
+    "tag": "Dental"
+  },
+  {
+    "date": "2024-07-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 338,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2024-07-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 132,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2024-07-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 67,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2024-08-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1294,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-08-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3699,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2024-08-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 394,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2024-08-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 145,
+    "tag": "Gas"
+  },
+  {
+    "date": "2024-08-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 232,
+    "tag": "Water"
+  },
+  {
+    "date": "2024-08-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 394,
+    "tag": "Consulting"
+  },
+  {
+    "date": "2024-08-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 74,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2024-08-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2024-08-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 45,
+    "tag": "Dental"
+  },
+  {
+    "date": "2024-08-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 424,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2024-08-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 50,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2024-08-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 124,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2024-09-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1296,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-09-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3712,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2024-09-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 304,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2024-09-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 186,
+    "tag": "Gas"
+  },
+  {
+    "date": "2024-09-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 170,
+    "tag": "Water"
+  },
+  {
+    "date": "2024-09-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 421,
+    "tag": "Design"
+  },
+  {
+    "date": "2024-09-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 89,
+    "tag": "Concert"
+  },
+  {
+    "date": "2024-09-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2024-09-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 52,
+    "tag": "Dental"
+  },
+  {
+    "date": "2024-09-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 421,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2024-09-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 87,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2024-09-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 56,
+    "tag": "Clothes"
+  },
+  {
+    "date": "2024-10-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1298,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-10-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3725,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2024-10-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 273,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2024-10-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 196,
+    "tag": "Transit"
+  },
+  {
+    "date": "2024-10-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 214,
+    "tag": "Internet"
+  },
+  {
+    "date": "2024-10-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 443,
+    "tag": "Consulting"
+  },
+  {
+    "date": "2024-10-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 112,
+    "tag": "Concert"
+  },
+  {
+    "date": "2024-10-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2024-10-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 83,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2024-10-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 284,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2024-10-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 133,
+    "tag": "Gift"
+  },
+  {
+    "date": "2024-10-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 71,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2024-11-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1301,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-11-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3738,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2024-11-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 346,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2024-11-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 162,
+    "tag": "Transit"
+  },
+  {
+    "date": "2024-11-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 163,
+    "tag": "Electric"
+  },
+  {
+    "date": "2024-11-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 418,
+    "tag": "Consulting"
+  },
+  {
+    "date": "2024-11-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 88,
+    "tag": "Movies"
+  },
+  {
+    "date": "2024-11-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2024-11-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 73,
+    "tag": "Dental"
+  },
+  {
+    "date": "2024-11-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 294,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2024-11-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 144,
+    "tag": "Refund"
+  },
+  {
+    "date": "2024-11-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 68,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2024-12-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1303,
+    "tag": "Rent"
+  },
+  {
+    "date": "2024-12-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3750,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2024-12-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 305,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2024-12-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 169,
+    "tag": "Gas"
+  },
+  {
+    "date": "2024-12-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 220,
+    "tag": "Internet"
+  },
+  {
+    "date": "2024-12-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 638,
+    "tag": "Web Work"
+  },
+  {
+    "date": "2024-12-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 142,
+    "tag": "Concert"
+  },
+  {
+    "date": "2024-12-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2024-12-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 32,
+    "tag": "Dental"
+  },
+  {
+    "date": "2024-12-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 303,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2024-12-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 168,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2024-12-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 91,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2025-01-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1306,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-01-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3763,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2025-01-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 316,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2025-01-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 158,
+    "tag": "Gas"
+  },
+  {
+    "date": "2025-01-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 227,
+    "tag": "Water"
+  },
+  {
+    "date": "2025-01-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 592,
+    "tag": "Coding"
+  },
+  {
+    "date": "2025-01-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 72,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2025-01-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2025-01-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 25,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2025-01-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 324,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2025-01-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 66,
+    "tag": "Refund"
+  },
+  {
+    "date": "2025-01-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 72,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2025-02-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1308,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-02-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3776,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2025-02-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 404,
+    "tag": "Dining"
+  },
+  {
+    "date": "2025-02-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 154,
+    "tag": "Parking"
+  },
+  {
+    "date": "2025-02-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 154,
+    "tag": "Water"
+  },
+  {
+    "date": "2025-02-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 638,
+    "tag": "Consulting"
+  },
+  {
+    "date": "2025-02-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 109,
+    "tag": "Movies"
+  },
+  {
+    "date": "2025-02-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2025-02-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 76,
+    "tag": "Dental"
+  },
+  {
+    "date": "2025-02-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 314,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2025-02-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 70,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2025-02-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 57,
+    "tag": "Clothes"
+  },
+  {
+    "date": "2025-03-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1310,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-03-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3789,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2025-03-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 376,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2025-03-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 188,
+    "tag": "Train"
+  },
+  {
+    "date": "2025-03-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 153,
+    "tag": "Electric"
+  },
+  {
+    "date": "2025-03-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 476,
+    "tag": "Consulting"
+  },
+  {
+    "date": "2025-03-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 56,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2025-03-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Music"
+  },
+  {
+    "date": "2025-03-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 43,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2025-03-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 399,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2025-03-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 58,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2025-03-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 67,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2025-04-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1313,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-04-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3802,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2025-04-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 385,
+    "tag": "Dining"
+  },
+  {
+    "date": "2025-04-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 167,
+    "tag": "Transit"
+  },
+  {
+    "date": "2025-04-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 159,
+    "tag": "Electric"
+  },
+  {
+    "date": "2025-04-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 392,
+    "tag": "Coding"
+  },
+  {
+    "date": "2025-04-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 144,
+    "tag": "Concert"
+  },
+  {
+    "date": "2025-04-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Music"
+  },
+  {
+    "date": "2025-04-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 65,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2025-04-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 353,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2025-04-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 91,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2025-04-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 55,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2025-05-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1315,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-05-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3814,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2025-05-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 404,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2025-05-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 168,
+    "tag": "Parking"
+  },
+  {
+    "date": "2025-05-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 211,
+    "tag": "Water"
+  },
+  {
+    "date": "2025-05-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 424,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2025-05-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 96,
+    "tag": "Games"
+  },
+  {
+    "date": "2025-05-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2025-05-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 32,
+    "tag": "Dental"
+  },
+  {
+    "date": "2025-05-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 283,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2025-05-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 41,
+    "tag": "Cashback"
+  },
+  {
+    "date": "2025-05-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 100,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2025-06-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1318,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-06-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3827,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2025-06-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 389,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2025-06-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 199,
+    "tag": "Transit"
+  },
+  {
+    "date": "2025-06-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 204,
+    "tag": "Electric"
+  },
+  {
+    "date": "2025-06-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 524,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2025-06-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 82,
+    "tag": "Games"
+  },
+  {
+    "date": "2025-06-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Music"
+  },
+  {
+    "date": "2025-06-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 76,
+    "tag": "Clinic"
+  },
+  {
+    "date": "2025-06-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 288,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2025-06-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 160,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2025-06-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 132,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2025-07-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1320,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-07-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3840,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2025-07-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 292,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2025-07-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 211,
+    "tag": "Gas"
+  },
+  {
+    "date": "2025-07-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 163,
+    "tag": "Water"
+  },
+  {
+    "date": "2025-07-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 554,
+    "tag": "Coding"
+  },
+  {
+    "date": "2025-07-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 87,
+    "tag": "Concert"
+  },
+  {
+    "date": "2025-07-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2025-07-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 31,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2025-07-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 450,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2025-07-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 65,
+    "tag": "Refund"
+  },
+  {
+    "date": "2025-07-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 123,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2025-08-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1322,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-08-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3853,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2025-08-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 349,
+    "tag": "Dining"
+  },
+  {
+    "date": "2025-08-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 169,
+    "tag": "Train"
+  },
+  {
+    "date": "2025-08-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 206,
+    "tag": "Internet"
+  },
+  {
+    "date": "2025-08-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 533,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2025-08-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 95,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2025-08-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2025-08-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 50,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2025-08-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 284,
+    "tag": "Brokerage"
+  },
+  {
+    "date": "2025-08-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 122,
+    "tag": "Gift"
+  },
+  {
+    "date": "2025-08-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 106,
+    "tag": "Clothes"
+  },
+  {
+    "date": "2025-09-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1325,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-09-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3866,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2025-09-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 334,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2025-09-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 188,
+    "tag": "Transit"
+  },
+  {
+    "date": "2025-09-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 139,
+    "tag": "Water"
+  },
+  {
+    "date": "2025-09-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 381,
+    "tag": "Design"
+  },
+  {
+    "date": "2025-09-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 67,
+    "tag": "Games"
+  },
+  {
+    "date": "2025-09-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2025-09-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 82,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2025-09-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 335,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2025-09-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 87,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2025-09-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 115,
+    "tag": "Clothes"
+  },
+  {
+    "date": "2025-10-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1327,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-10-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 4028,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2025-10-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 352,
+    "tag": "Dining"
+  },
+  {
+    "date": "2025-10-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 193,
+    "tag": "Train"
+  },
+  {
+    "date": "2025-10-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 155,
+    "tag": "Internet"
+  },
+  {
+    "date": "2025-10-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 421,
+    "tag": "Consulting"
+  },
+  {
+    "date": "2025-10-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 130,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2025-10-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2025-10-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 61,
+    "tag": "Dental"
+  },
+  {
+    "date": "2025-10-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 324,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2025-10-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 168,
+    "tag": "Refund"
+  },
+  {
+    "date": "2025-10-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 79,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2025-11-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1330,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-11-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 4041,
+    "tag": "Paycheck"
+  },
+  {
+    "date": "2025-11-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 349,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2025-11-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 158,
+    "tag": "Parking"
+  },
+  {
+    "date": "2025-11-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 164,
+    "tag": "Internet"
+  },
+  {
+    "date": "2025-11-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 461,
+    "tag": "Tutoring"
+  },
+  {
+    "date": "2025-11-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 89,
+    "tag": "Movies"
+  },
+  {
+    "date": "2025-11-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2025-11-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 73,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2025-11-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 326,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2025-11-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 45,
+    "tag": "Refund"
+  },
+  {
+    "date": "2025-11-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 119,
+    "tag": "Accessories"
+  },
+  {
+    "date": "2025-12-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1332,
+    "tag": "Rent"
+  },
+  {
+    "date": "2025-12-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 4054,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2025-12-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 319,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2025-12-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 142,
+    "tag": "Parking"
+  },
+  {
+    "date": "2025-12-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 156,
+    "tag": "Water"
+  },
+  {
+    "date": "2025-12-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 443,
+    "tag": "Coding"
+  },
+  {
+    "date": "2025-12-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 110,
+    "tag": "Movies"
+  },
+  {
+    "date": "2025-12-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Music"
+  },
+  {
+    "date": "2025-12-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 84,
+    "tag": "Pharmacy"
+  },
+  {
+    "date": "2025-12-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 332,
+    "tag": "Emergency Fund"
+  },
+  {
+    "date": "2025-12-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 169,
+    "tag": "Gift"
+  },
+  {
+    "date": "2025-12-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 96,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2026-01-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1334,
+    "tag": "Rent"
+  },
+  {
+    "date": "2026-01-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3917,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2026-01-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 397,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2026-01-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 146,
+    "tag": "Parking"
+  },
+  {
+    "date": "2026-01-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 169,
+    "tag": "Water"
+  },
+  {
+    "date": "2026-01-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 452,
+    "tag": "Web Work"
+  },
+  {
+    "date": "2026-01-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 114,
+    "tag": "Games"
+  },
+  {
+    "date": "2026-01-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Cloud Storage"
+  },
+  {
+    "date": "2026-01-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 22,
+    "tag": "Dental"
+  },
+  {
+    "date": "2026-01-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 280,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2026-01-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 121,
+    "tag": "Gift"
+  },
+  {
+    "date": "2026-01-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 82,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2026-02-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1337,
+    "tag": "Rent"
+  },
+  {
+    "date": "2026-02-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3930,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2026-02-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 296,
+    "tag": "Dining"
+  },
+  {
+    "date": "2026-02-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 200,
+    "tag": "Parking"
+  },
+  {
+    "date": "2026-02-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 210,
+    "tag": "Electric"
+  },
+  {
+    "date": "2026-02-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 424,
+    "tag": "Coding"
+  },
+  {
+    "date": "2026-02-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 96,
+    "tag": "Movies"
+  },
+  {
+    "date": "2026-02-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Music"
+  },
+  {
+    "date": "2026-02-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 25,
+    "tag": "Dental"
+  },
+  {
+    "date": "2026-02-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 305,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2026-02-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 121,
+    "tag": "Refund"
+  },
+  {
+    "date": "2026-02-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 110,
+    "tag": "Home Goods"
+  },
+  {
+    "date": "2026-03-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1339,
+    "tag": "Rent"
+  },
+  {
+    "date": "2026-03-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 3942,
+    "tag": "Direct Deposit"
+  },
+  {
+    "date": "2026-03-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 415,
+    "tag": "Coffee"
+  },
+  {
+    "date": "2026-03-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 139,
+    "tag": "Train"
+  },
+  {
+    "date": "2026-03-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 181,
+    "tag": "Electric"
+  },
+  {
+    "date": "2026-03-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 550,
+    "tag": "Coding"
+  },
+  {
+    "date": "2026-03-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 92,
+    "tag": "Streaming Event"
+  },
+  {
+    "date": "2026-03-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2026-03-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 37,
+    "tag": "Checkup"
+  },
+  {
+    "date": "2026-03-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 290,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2026-03-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 107,
+    "tag": "Refund"
+  },
+  {
+    "date": "2026-03-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 120,
+    "tag": "Shoes"
+  },
+  {
+    "date": "2026-04-01",
+    "group": "Expenses",
+    "category": "Housing",
+    "amount": 1342,
+    "tag": "Rent"
+  },
+  {
+    "date": "2026-04-03",
+    "group": "Income",
+    "category": "Salary",
+    "amount": 4255,
+    "tag": "Monthly Salary"
+  },
+  {
+    "date": "2026-04-05",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 393,
+    "tag": "Groceries"
+  },
+  {
+    "date": "2026-04-08",
+    "group": "Expenses",
+    "category": "Transport",
+    "amount": 136,
+    "tag": "Parking"
+  },
+  {
+    "date": "2026-04-11",
+    "group": "Expenses",
+    "category": "Utilities",
+    "amount": 208,
+    "tag": "Electric"
+  },
+  {
+    "date": "2026-04-12",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 520,
+    "tag": "Design"
+  },
+  {
+    "date": "2026-04-14",
+    "group": "Expenses",
+    "category": "Entertainment",
+    "amount": 122,
+    "tag": "Movies"
+  },
+  {
+    "date": "2026-04-17",
+    "group": "Expenses",
+    "category": "Subscriptions",
+    "amount": 30,
+    "tag": "Streaming"
+  },
+  {
+    "date": "2026-04-20",
+    "group": "Expenses",
+    "category": "Health",
+    "amount": 52,
+    "tag": "Dental"
+  },
+  {
+    "date": "2026-04-23",
+    "group": "Expenses",
+    "category": "Savings",
+    "amount": 410,
+    "tag": "High Yield Savings"
+  },
+  {
+    "date": "2026-04-26",
+    "group": "Income",
+    "category": "Other Income",
+    "amount": 48,
+    "tag": "Bonus"
+  },
+  {
+    "date": "2026-04-27",
+    "group": "Expenses",
+    "category": "Shopping",
+    "amount": 91,
+    "tag": "Accessories"
+  }
 ]
