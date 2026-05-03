@@ -102,8 +102,11 @@ st.divider()
 def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.DataFrame:
     # All transactions grouped by category and total amounts for each
     grouped = (transactions.groupby(["group", "category"], as_index=False)["amount"].sum())
+    
     watchlist_df = pd.merge(grouped, budgets, on="category", how="left")
+    latest_month = watchlist_df["Month"].max()
 
+    
     watchlist_df = watchlist_df.rename(columns={
         "group": "Group",
         "category": "Category",
