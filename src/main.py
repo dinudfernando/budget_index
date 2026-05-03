@@ -48,7 +48,7 @@ st.title("At a Glance...")
 TIMEFRAMES = ["W", "M", "Q", "Y", "2Y", "5Y"]
 
 tf = st.segmented_control(
-    "Timeframe",
+    "Select a Timeframe",
     TIMEFRAMES,
     default="M",
     help="Change the window used for all charts and stats"
