@@ -24,7 +24,7 @@ st.set_page_config(
 st.markdown("""
 <style>
 div.stButton > button {
-    width: 100%
+    width: 100%;
     text-align: left;
     border-radius: 14px;
     border: 1px solid #e5e7eb;
@@ -114,7 +114,7 @@ st.divider()
 
 #Watchlist
 def build_watchlist(transactions: pd.DataFrame, budgets: pd.DataFrame) -> pd.DataFrame:
-
+    """"""
     #Add months to this function
     # All transactions grouped by category and total amounts for each
     grouped = (transactions.groupby(["group", "category"], as_index=False)["amount"].sum())
