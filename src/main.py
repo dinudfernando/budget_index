@@ -95,6 +95,22 @@ def filter_by_timeframe(df: pd.DataFrame, tf: str) -> pd.DataFrame:
     return df[df["date"].between(start, end)]
 
 
+# Budget Timeframe Multiplier
+def budget_multiplier(tf: str) -> float:
+    """Convert monthly budget into the selected timeframe budget."""
+    if tf == "W":
+        return 7 / 30.44
+    elif tf == "M":
+        return 1
+    elif tf == "Q":
+        return 3
+    elif tf == "Y":
+        return 12
+    elif tf == "2Y":
+        return 24
+    else:  # "5Y"
+        return 60
+    
 # Budget Load
 
 def load_budgets() -> pd.DataFrame:
