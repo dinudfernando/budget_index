@@ -1,3 +1,6 @@
+'''This page is for showing detailed information about a particular category '''
+
+
 import os
 import json
 from typing import Optional
