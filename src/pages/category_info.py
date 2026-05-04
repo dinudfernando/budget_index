@@ -40,3 +40,10 @@ forwarded_category: Optional[str] = query_parameters.get("category", None)
 if forwarded_category not in all_categories:
     forwarded_category = all_categories[0]
 
+selected_category = st.selectbox(
+    "Category",
+    all_categories,
+    index=all_categories.index(forwarded_category)
+)
+
+st.query_params["category"] = selected_category
