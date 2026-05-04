@@ -78,4 +78,13 @@ def filter_by_timeframe(df: pd.DataFrame, tf: str) -> pd.DataFrame:
     
     return df[df["date"].between(start,end)].copy()
 
+if "category_info_tf" not in st.session_state:
+    st.session_state["category_info_tf"] = "M"
+
+page_tf = st.session_state["category_info_tf"]
+
+filtered_transactions = filter_by_timeframe(transactions_df, page_tf)
+filtered_category_rows = filtered_transactions[
+    filtered_transactions["category"] == selected_category
+].copy()
 
