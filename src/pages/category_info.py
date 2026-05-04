@@ -93,4 +93,28 @@ if filtered_category_rows.empty:
     st.warning("No data for this category in the selected timeframe.")
     st.stop()
 
+chart_df = ()
 
+historical_chart = (
+    alt.Chart(chart_df)
+    .mark_line(point=True)
+    .encode(
+        x=alt.X(
+            "date:T",
+            title=None,
+            axis=alt.Axis(format="%b %d", labelAngle=0)
+        ),
+        y=alt.Y(
+            "amount:Q",
+            title="Amount"
+        ),
+        tooltip=[
+            alt.Tooltip("date:T", title="Date"),
+            alt.Tooltip("amount:Q", title="Amount", format=",.2f")
+        ]
+    )
+    .properties(height=360)
+    .interactive()
+)
+
+st.altair_chart(historical_chart, use_container_width=True)
