@@ -89,3 +89,8 @@ filtered_category_rows = filtered_transactions[
     filtered_transactions["category"] == selected_category
 ].copy()
 
+if filtered_category_rows.empty:
+    st.warning("No data for this category in the selected timeframe.")
+    st.stop()
+
+
