@@ -60,7 +60,7 @@ st.caption(selected_group)
 
 
 def filter_by_timeframe(df: pd.DataFrame, tf: str) -> pd.DataFrame:
-    ''''''
+    '''Timeframe '''
     df = df.copy()
     df = df.sort_values("date")
 
