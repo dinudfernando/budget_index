@@ -36,3 +36,7 @@ transactions_df = load_transactions()
 all_categories = sorted(transactions_df["category"].dropna().unique().tolist())
 
 query_parameters = st.query_params
+forwarded_category: Optional[str] = query_parameters.get("category", None)
+if forwarded_category not in all_categories:
+    forwarded_category = all_categories[0]
+
