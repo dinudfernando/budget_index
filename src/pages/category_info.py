@@ -60,7 +60,7 @@ st.caption(selected_group)
 
 
 def filter_by_timeframe(df: pd.DataFrame, tf: str) -> pd.DataFrame:
-    '''Timeframe '''
+    '''Timeframe filter for graph and stats'''
     df = df.copy()
     df = df.sort_values("date")
 
