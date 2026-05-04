@@ -35,7 +35,7 @@ def load_transactions() -> pd.DataFrame:
     return df.sort_values("date")
 
 transactions_df = load_transactions()
-
+# Categories are shown based on whether redirected or would default to the first category
 all_categories = sorted(transactions_df["category"].dropna().unique().tolist())
 
 query_parameters = st.query_params
@@ -43,6 +43,7 @@ forwarded_category: Optional[str] = query_parameters.get("category", None)
 if forwarded_category not in all_categories:
     forwarded_category = all_categories[0]
 
+#Category Select Box
 selected_category = st.selectbox(
     "Category",
     all_categories,
@@ -50,3 +51,9 @@ selected_category = st.selectbox(
 )
 
 st.query_params["category"] = selected_category
+
+category_rows = transactions_df[transactions_df["category"] == selected_category].copy()
+selected_group = category_rows["group"].iloc[0]
+
+st.title(selected_category)
+st.caption(selected_group)
