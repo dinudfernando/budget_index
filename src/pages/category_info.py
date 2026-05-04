@@ -30,3 +30,9 @@ def load_transactions() -> pd.DataFrame:
     df["date"] = pd.to_datetime(df["date"])
     df["amount"] = pd.to_numeric(df["amount"])
     return df.sort_values("date")
+
+transactions_df = load_transactions()
+
+all_categories = sorted(transactions_df["category"].dropna().unique().tolist())
+
+query_parameters = st.query_params
