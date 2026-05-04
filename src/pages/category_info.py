@@ -57,3 +57,25 @@ selected_group = category_rows["group"].iloc[0]
 
 st.title(selected_category)
 st.caption(selected_group)
+
+
+def filter_by_timeframe(df: pd.DataFrame, tf: str) -> pd.DataFrame:
+    df = df.copy()
+    df = df.sort_values("date")
+
+    end = df["date"].max()
+
+    if tf=="W":
+        start = end - pd.Timedelta(days=7)
+    elif tf=="M":
+        start = end - pd.Timedelta(days=30)
+    elif tf=="Y":
+        start = end - pd.Timedelta(days=365)
+    elif tf=="2Y":
+        start = end - pd.Timedelta(days=730)
+    elif tf=="5Y":
+        start = end - pd.Timedelta(days=1825)
+    
+    return df[df["date"].between(start,end)].copy()
+
+
