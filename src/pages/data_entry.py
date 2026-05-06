@@ -59,20 +59,25 @@ expenses_categories = sorted(
 st.title("New Data Entry")
 st.caption("Add a new transaction under income or expenses")
 
+group = st.selectbox(
+    "Group",
+    ["Income", "Expenses"],
+    key="entry_group"
+)
+
+if group=="Income":
+    category_options = income_categories
+else:
+    category_options = expenses_categories
+
+if "entry_category" in st.session_state and st.session_state["entry_category"] not in category_options:
+    st.session_state["entry_category"] = category_options[0]
+
+category = st.selectbox("Category", category_options, key="entry_category")
+
+
 with st.form("new_transaction_form"):
     entry_date = st.date_input("Date", value=date.today())
-
-    group = st.selectbox(
-        "Group",
-        ["Income", "Expenses"]
-    )
-
-    if group=="Income":
-        category_options = income_categories
-    else:
-        category_options = expenses_categories
-
-    category = st.selectbox("Category", category_options)
     amount = st.number_input("Amount", min_value=0.0, step=1.0, format="%.2f")
     tag = st.text_input("Tag", placeholder="Groceries, Rent, Paycheck etc..")
 
