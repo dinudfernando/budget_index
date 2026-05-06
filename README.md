@@ -39,7 +39,7 @@ From the project root:
    pip install streamlit pandas altair
    ```
 
-3. Run the app (entrypoint is under `dist/` per course requirements):
+3. Run the app (entrypoint is under `dist/`):
 
    ```bash
    streamlit run dist/main.py
@@ -93,19 +93,30 @@ High‑level layout (only key paths shown):
 project-root/
 ├─ README.md          # This file, app overview and instructions
 ├─ dist/
-│  └─ main.py         # Course-required entry script; runs the Streamlit app
-├─ src/
 │  ├─ main.py         # Main dashboard (At a Glance / watchlist / timeframe switcher)
 │  ├─ data/
 │  │  ├─ transactions.json  # Transaction data (date, group, category, amount, tag)
 │  │  └─ budgets.json       # Monthly budgets per category
 │  └─ pages/
 │     ├─ category_info.py   # Category detail page (chart, stats, comparison, history)
-│     └─ data_entry.py      # New data entry page (add transactions to transactions.json)
+│     └─ data_entry.py   
+├─ src/
+│  ├─ main.py        
+│  ├─ data/
+│  │  ├─ transactions.json  
+│  │  └─ budgets.json       
+│  └─ pages/
+│     ├─ category_info.py   
+│     └─ data_entry.py      
 └─ .venv/ (optional)  # Virtual environment (ignored in most repos)
 ```
 
 ### `dist/main.py`
 
-- Thin entrypoint used by `streamlit run dist/main.py` as required by the course.  
+- Thin entrypoint used by `streamlit run dist/main.py`.  
 - Typically imports and runs the main dashboard logic or redirects to `src/main.py`.
+
+---
+## AI Usage
+- Readme Documentation 
+-
