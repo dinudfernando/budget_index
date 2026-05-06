@@ -49,9 +49,12 @@ def save_transaction(record: dict) -> None:
 transactions_df = load_transactions()
 
 income_categories = sorted(
-    transactions_df.loc[transactions_df["grop"] == "Income", "category"].dropna().unique().tolist()
+    transactions_df.loc[transactions_df["group"] == "Income", "category"].dropna().unique().tolist()
 )
 
-income_categories = sorted(
-    transactions_df.loc[transactions_df["grop"] == "Income", "category"].dropna().unique().tolist()
+expenses_categories = sorted(
+    transactions_df.loc[transactions_df["group"] == "Expenses", "category"].dropna().unique().tolist()
 )
+
+st.title("New Data Entry")
+st.caption("Add a new transaction under income or expenses")
