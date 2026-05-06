@@ -68,6 +68,20 @@ def update_budget(category_name: str, new_budget: float) -> None:
             row["budget"] = round(float(new_budget), 2)
             updated = True
             break
+
+    if not updated:
+        data.append({
+            "category": category_name,
+            "budget": round(float(new_budget), 2)
+        })
+
+    data = sorted(data, key=lambda x: x["category"])
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+    load_budgets.clear()
+
     
 
 transactions_df = load_transactions()
@@ -124,3 +138,6 @@ if submitted:
         save_transaction(new_record)
         st.success("New record saved successfully!")
         st.json(new_record)
+
+st.divider()
+st.subheader("Change Budget")
