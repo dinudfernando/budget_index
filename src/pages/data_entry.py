@@ -91,3 +91,6 @@ if submitted:
             "amount": round(float(amount), 2),
             "tag": tag.strip()
         }
+        save_transaction(new_record)
+        st.success("New record saved successfully!")
+        st.json(new_record)
