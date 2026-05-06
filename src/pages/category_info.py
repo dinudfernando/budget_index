@@ -13,7 +13,7 @@ import streamlit as st
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
 def get_data_path(filename: str) -> str:
-    return os.path.join(APP_PATH, "data", filename)
+    return os.path.join(APP_PATH, "../data", filename)
 
 st.set_page_config(
     page_title="Category Info",
@@ -237,3 +237,15 @@ with comparison_col:
     c3,c4 = st.columns(2)
     c3.metric("Category Total", f'#{selected_total}')
     c4.metric("Group Total", f"{group_total:,.1f}")
+
+st.subheader("View History")
+
+search_text = st.text_input("Search history", placeholder="Search tag, date, or amount")
+
+filter_col1, filter_col2 = st.columns(2)
+
+with filter_col1:
+    selected_tag = st.selectbox(
+        "Tag",
+        ["All"] + sorted(filtered_category_rows["tag"].dropna().unique().tolist())
+    )
