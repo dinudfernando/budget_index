@@ -29,6 +29,16 @@ def load_transactions() -> pd.DataFrame:
     df["amount"] = pd.to_numeric(df["amount"])
     return df
 
+@st.cache_data
+def load_budgets() -> pd.DataFrame:
+    path = get_data_path("budgets.json")
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    df = pd.DataFrame(data)
+    df["budget"] = pd.to_numeric(df["budget"])
+    return df
+
 # Save new records to transactions file
 def save_transaction(record: dict) -> None:
     path = get_data_path("transactions.json")
@@ -47,6 +57,7 @@ def save_transaction(record: dict) -> None:
 
 
 transactions_df = load_transactions()
+budgets_df = load_budgets()
 
 income_categories = sorted(
     transactions_df.loc[transactions_df["group"] == "Income", "category"].dropna().unique().tolist()
