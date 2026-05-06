@@ -64,5 +64,13 @@ with st.form("new_transaction_form"):
 
     group = st.selectbox(
         "Group",
-        ["Income", "Expenese"]
+        ["Income", "Expenses"]
     )
+
+    if group=="Income":
+        category_options = income_categories
+    else:
+        category_options = expenses_categories
+
+    category = st.selectbox("Category", category_options)
+    amount = st.number_input("Amount", min_value=0.0, step=1.0, format="")
