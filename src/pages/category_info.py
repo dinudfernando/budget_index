@@ -226,3 +226,14 @@ with comparison_col:
         )
         .properties(height=260)
     )
+
+    st.altair_chart(donut_chart, use_container_width=True)
+
+    #More info stats under comparisons
+    c1,c2 = st.columns(2)
+    c1.metric("Standing", f'#{standing}')
+    c2.metric("Portion", f"{portion:,.1f}")
+
+    c3,c4 = st.columns(2)
+    c3.metric("Category Total", f'#{selected_total}')
+    c4.metric("Group Total", f"{group_total:,.1f}")
