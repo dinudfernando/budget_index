@@ -101,14 +101,7 @@ project-root/
 │  └─ pages/
 │     ├─ category_info.py   # Category detail page (chart, stats, comparison, history)
 │     └─ data_entry.py   
-├─ src/
-│  ├─ main.py        
-│  ├─ data/
-│  │  ├─ transactions.json  
-│  │  └─ budgets.json       
-│  └─ pages/
-│     ├─ category_info.py   
-│     └─ data_entry.py      
+├─ src/                 # Development     
 └─ .venv/ (optional)  # Virtual environment (ignored in most repos)
 ```
 
