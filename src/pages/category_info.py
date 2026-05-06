@@ -257,3 +257,21 @@ with filter_col2:
 
 history_df = filtered_category_rows[["date", "group", "category", "amount", "tag"]].copy()
 history_df["date"] = history_df["date"].dt.strftime("%Y-%m-%d")
+
+if search_text:
+    mask = history_df.astype(str).apply(
+        lambda col: col.str.contains(search_text, case=False, na=False)
+    )
+    history_df = history_df[mask.any(axis=1)]
+
+if selected_tag != "All":
+    history_df = history_df[history_df["tag"] == selected_tag]
+
+history_df = history_df.sort_values(
+    "date",
+    ascending=(sort_order == "Oldest First")
+)
+
+st.dataframe(
+    
+)
