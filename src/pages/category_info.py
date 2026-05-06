@@ -104,7 +104,7 @@ if filtered_category_rows.empty:
     st.warning("No data for this category in the selected timeframe.")
     st.stop()
 
-chart_df = ()
+chart_df = (filtered_category_rows.groupby(["date"], as_index=False)[["amount"]].sum().sort_values(by=["date"]))
 
 # Graph chart for category transactions with x time and y amount
 
@@ -222,7 +222,7 @@ with comparison_col:
                 scale=alt.Scale(domain=[selected_category, "All Others"], range=["#111827", "#d1d5db"]),
                 legend=None
             ),
-            tooltip=["Slice:N", alt.Tooltip("Amount: Q", format=",..2f")]
+            tooltip=["Slice:N", alt.Tooltip("Amount: Q", format=",.2f")]
         )
         .properties(height=260)
     )
