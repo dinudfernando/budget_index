@@ -218,4 +218,11 @@ with comparison_col:
         .encode(
             theta=alt.Theta("Amount:Q"),
             color=alt.Color(
-                "Slice:N")))
+                "Slice:N",
+                scale=alt.Scale(domain=[selected_category, "All Others"], range=["#111827", "#d1d5db"]),
+                legend=None
+            ),
+            tooltip=["Slice:N", alt.Tooltip("Amount: Q", format=",..2f")]
+        )
+        .properties(height=260)
+    )
