@@ -50,7 +50,7 @@ TIMEFRAMES = ["W", "M", "Q", "Y", "2Y", "5Y"]
 tf = st.segmented_control(
     "Select a Timeframe",
     TIMEFRAMES,
-    default="M",
+    default="Y",
     help="Change the window used for all charts and stats"
 )
 
@@ -124,7 +124,7 @@ def load_budgets() -> pd.DataFrame:
 
 
 transactions_df = load_transactions()
-tf_value = tf or "M"
+tf_value = tf or "Y"
 
 # Filtered time frame
 transactions_df = filter_by_timeframe(transactions_df, tf_value)
