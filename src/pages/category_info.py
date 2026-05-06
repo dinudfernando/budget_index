@@ -249,3 +249,11 @@ with filter_col1:
         "Tag",
         ["All"] + sorted(filtered_category_rows["tag"].dropna().unique().tolist())
     )
+with filter_col2:
+    sort_order = st.selectbox(
+        "Sort by date",
+        ["Newest First", "Oldest First"]
+    )
+
+history_df = filtered_category_rows[["date", "group", "category", "amount", "tag"]].copy()
+history_df["date"] = history_df["date"].dt.strftime("%Y-%m-%d")
