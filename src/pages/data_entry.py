@@ -17,6 +17,7 @@ st.set_page_config(
     layout="wide"
 )
 
+#Load current transaction list
 @st.cache_data
 def load_transactions() -> pd.DataFrame:
     path = get_data_path("transactions.json")
@@ -27,3 +28,19 @@ def load_transactions() -> pd.DataFrame:
     df["date"] = pd.to_datetime(df["date"])
     df["amount"] = pd.to_numeric(df["amount"])
     return df
+
+# Save new records to transactions file
+def save_transaction(record: dict) -> None:
+    path = get_data_path("transactions.json")
+
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    data.append(record)
+
+    data = sorted(data, key=lambda x: x["date"])
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+    load_transactions.clear()
