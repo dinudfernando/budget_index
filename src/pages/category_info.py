@@ -49,8 +49,12 @@ budgets_df = load_budgets()
 # Categories are shown based on whether redirected or would default to the first category
 all_categories = sorted(transactions_df["category"].dropna().unique().tolist())
 
-query_parameters = st.query_params
-forwarded_category: Optional[str] = query_parameters.get("category", None)
+forwarded_category: Optional[str] = st.session_state.get("selected_category")
+
+if forwarded_category not in all_categories:
+    query_parameters = st.query_params
+    forwarded_category = query_parameters.get("category", None)
+
 if forwarded_category not in all_categories:
     forwarded_category = all_categories[0]
 
