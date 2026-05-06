@@ -55,6 +55,20 @@ def save_transaction(record: dict) -> None:
 
     load_transactions.clear()
 
+# Budget update upon changes to budgets.json
+def update_budget(category_name: str, new_budget: float) -> None:
+    path = get_data_path("budgets.json")
+
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    updated = False
+    for row in data:
+        if row["category"] == category_name:
+            row["budget"] = round(float(new_budget), 2)
+            updated = True
+            break
+    
 
 transactions_df = load_transactions()
 budgets_df = load_budgets()
