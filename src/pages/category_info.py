@@ -150,3 +150,11 @@ with controls_right:
     st.page_link("data_entry.py", label="+ New Data", icon="➕")
 
 stats_col, comparison_col = st.columns(2)
+
+total_amount = filtered_category_rows["amount"].sum()
+avg_amount = filtered_category_rows["amount"].mean()
+median_amount = filtered_category_rows["amount"].median()
+max_amount = filtered_category_rows["amount"].max()
+min_amount = filtered_category_rows["amount"].min()
+frequency = len(filtered_category_rows)
+std_amount = filtered_category_rows["amount"].std()
