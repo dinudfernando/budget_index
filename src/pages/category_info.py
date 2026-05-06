@@ -222,7 +222,7 @@ with comparison_col:
                 scale=alt.Scale(domain=[selected_category, "All Others"], range=["#111827", "#d1d5db"]),
                 legend=None
             ),
-            tooltip=["Slice:N", alt.Tooltip("Amount: Q", format=",.2f")]
+            tooltip=["Slice:N", alt.Tooltip("Amount:Q", format=",.2f")]
         )
         .properties(height=260)
     )
