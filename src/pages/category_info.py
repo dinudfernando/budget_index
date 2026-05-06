@@ -71,7 +71,7 @@ st.caption(selected_group)
 
 
 def filter_by_timeframe(df: pd.DataFrame, tf: str) -> pd.DataFrame:
-    '''Timeframe filter for graph and stats'''
+    '''Timeframe filter for category graph and stats'''
     df = df.copy()
     df = df.sort_values("date")
 
@@ -105,6 +105,8 @@ if filtered_category_rows.empty:
     st.stop()
 
 chart_df = ()
+
+# Graph chart for category transactions with x time and y amount
 
 historical_chart = (
     alt.Chart(chart_df)
@@ -200,3 +202,20 @@ portion = (selected_total / group_total * 100) if group_total > 0 else 0
 
 comparison_df = comparison_df.reset_index(drop=True)
 standing = comparison_df.index[comparison_df["category"] == selected_category][0] + 1
+
+# Donut Chart comparison between selected category and others
+donut_df = pd.DataFrame({
+    "Slice": [selected_category, "All Others"],
+    "Amount": [selected_total, other_total]
+})
+
+with comparison_col:
+    st.subheader("Comparison")
+
+    donut_chart = (
+        alt.Chart(donut_df)
+        .mark_arc(innerRadius=60)
+        .encode(
+            theta=alt.Theta("Amount:Q"),
+            color=alt.Color(
+                "Slice:N")))
