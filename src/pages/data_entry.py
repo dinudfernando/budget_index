@@ -73,4 +73,17 @@ with st.form("new_transaction_form"):
         category_options = expenses_categories
 
     category = st.selectbox("Category", category_options)
-    amount = st.number_input("Amount", min_value=0.0, step=1.0, format="")
+    amount = st.number_input("Amount", min_value=0.0, step=1.0, format="%.2f")
+    tag = st.text_input("Tag", placeholder="Groceries, Rent, Paycheck etc..")
+
+    submitted = st.form_submit_button("Save Record", use_container_width=True)
+
+if submitted:
+    if amount <= 0:
+        st.error("Amount must be greater than 0!")
+    elif not tag.strip():
+        st.error("Tag is required.")
+    else:
+        new_record = {
+            "date"
+        }
