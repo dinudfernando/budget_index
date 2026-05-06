@@ -132,7 +132,7 @@ st.altair_chart(historical_chart, use_container_width=True)
 
 controls_left, controls_right = st.columns([3, 1])
 
-
+# Filter data by timeframe on the stats and graph 
 with controls_left:
     new_tf = st.segmented_control(
         "Timeframe",
@@ -147,6 +147,7 @@ with controls_left:
         st.session_state["category_info_tf"] = new_tf
         st.rerun()
 
+# link to data entry page where new records can be created
 with controls_right:
     st.page_link("data_entry.py", label="+ New Data", icon="➕")
 
