@@ -95,6 +95,8 @@ project-root/
 ├─ README.md          # This file, app overview and instructions
 ├─ dist/
 │  ├─ main.py         # Main dashboard (At a Glance / watchlist / timeframe switcher)
+   ├─ assets/
+   |  └─ budget_index_logo.png  # Budget Index Logo
 │  ├─ data/
 │  │  ├─ transactions.json  # Transaction data (date, group, category, amount, tag)
 │  │  └─ budgets.json       # Monthly budgets per category
@@ -113,4 +115,5 @@ project-root/
 ---
 ## AI Usage
 - Readme Documentation 
--
+- Image Assets (Logo)
+- Financial Metric Calculation Guidance
