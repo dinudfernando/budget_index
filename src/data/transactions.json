@@ -5045,5 +5045,12 @@
     "category": "Freelance",
     "amount": 2000.0,
     "tag": "Pilot Project"
+  },
+  {
+    "date": "2026-05-06",
+    "group": "Expenses",
+    "category": "Food",
+    "amount": 600.0,
+    "tag": "Restaurant"
   }
 ]
