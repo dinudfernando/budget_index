@@ -44,3 +44,14 @@ def save_transaction(record: dict) -> None:
         json.dump(data, f, indent=2)
 
     load_transactions.clear()
+
+
+transactions_df = load_transactions()
+
+income_categories = sorted(
+    transactions_df.loc[transactions_df["grop"] == "Income", "category"].dropna().unique().tolist()
+)
+
+income_categories = sorted(
+    transactions_df.loc[transactions_df["grop"] == "Income", "category"].dropna().unique().tolist()
+)
