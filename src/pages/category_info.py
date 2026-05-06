@@ -151,7 +151,7 @@ with controls_left:
 
 # link to data entry page where new records can be created
 with controls_right:
-    st.page_link("data_entry.py", label="+ New Data", icon="➕")
+    st.page_link("pages/data_entry.py", label="+ New Data", icon="➕")
 
 stats_col, comparison_col = st.columns(2)
 
