@@ -158,3 +158,20 @@ max_amount = filtered_category_rows["amount"].max()
 min_amount = filtered_category_rows["amount"].min()
 frequency = len(filtered_category_rows)
 std_amount = filtered_category_rows["amount"].std()
+
+with stats_col:
+    st.subheader("Stats")
+
+    s1, s2 = st.columns(2)
+    s1.metric("Sum", f"${total_amount:,.2f}")
+    s2.metric("Average", f"${avg_amount:,.2f}")
+
+    s3, s4 = st.columns(2)
+    s3.metric("Median", f"${median_amount:,.2f}")
+    s4.metric("Frequency", f"{frequency}")
+
+    s5, s6 = st.columns(2)
+    s5.metric("Max", f"${max_amount:,.2f}")
+    s6.metric("Min", f"${min_amount:,.2f}")
+
+    st.metric("Volatility", f"${std_amount:,.2f}")
