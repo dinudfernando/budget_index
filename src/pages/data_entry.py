@@ -16,3 +16,14 @@ st.set_page_config(
     page_icon="➕",
     layout="wide"
 )
+
+@st.cache_data
+def load_transactions() -> pd.DataFrame:
+    path = get_data_path("transactions.json")
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    df = pd.DataFrame(data)
+    df["date"] = pd.to_datetime(df["date"])
+    df["amount"] = pd.to_numeric(df["amount"])
+    return df
