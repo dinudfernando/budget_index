@@ -58,3 +58,11 @@ expenses_categories = sorted(
 
 st.title("New Data Entry")
 st.caption("Add a new transaction under income or expenses")
+
+with st.form("new_transaction_form"):
+    entry_date = st.date_input("Date", value=date.today())
+
+    group = st.selectbox(
+        "Group",
+        ["Income", "Expenese"]
+    )
