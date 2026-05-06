@@ -13,7 +13,7 @@ def get_data_path(filename: str) -> str:
 
 st.set_page_config(
     page_title="New Data Entry",
-    page_icon="➕",
+    page_icon="🗳️",
     layout="wide"
 )
 
