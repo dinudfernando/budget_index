@@ -118,3 +118,19 @@ historical_chart = (
 )
 
 st.altair_chart(historical_chart, use_container_width=True)
+
+controls_left, controls_right = st.columns([3, 1])
+
+with controls_left:
+    new_tf = st.segmented_control(
+        "Timeframe",
+        TIMEFRAMES,
+        default=page_tf,
+        label_visibility="collapsed"
+    )
+
+    new_tf = new_tf or "M"
+
+    if new_tf != st.session_state["category_info_tf"]:
+        st.session_state["category_info_tf"] = new_tf
+        st.rerun()
