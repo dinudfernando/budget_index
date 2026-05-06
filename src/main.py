@@ -6,6 +6,7 @@ import numpy as np
 import streamlit as st
 import altair as alt
 from typing import Optional
+from PIL import Image
 
 # Path Helper
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -41,6 +42,10 @@ div.stButton > button:hover {
             
 </style>
 """, unsafe_allow_html=True)
+
+# # Added Pillow Library for more image control
+# logo = Image.open("src/assets/budget_index_logo.png")
+# st.image(logo,width=250)
 
 st.title("At a Glance...")
 
