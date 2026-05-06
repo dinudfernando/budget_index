@@ -132,6 +132,7 @@ st.altair_chart(historical_chart, use_container_width=True)
 
 controls_left, controls_right = st.columns([3, 1])
 
+
 with controls_left:
     new_tf = st.segmented_control(
         "Timeframe",
@@ -151,6 +152,7 @@ with controls_right:
 
 stats_col, comparison_col = st.columns(2)
 
+# Stats  for selected category listed on the left side of page
 total_amount = filtered_category_rows["amount"].sum()
 avg_amount = filtered_category_rows["amount"].mean()
 median_amount = filtered_category_rows["amount"].median()
@@ -175,3 +177,25 @@ with stats_col:
     s6.metric("Min", f"${min_amount:,.2f}")
 
     st.metric("Volatility", f"${std_amount:,.2f}")
+
+# Data for comparison chart and information
+same_group_rows = filtered_transactions[
+    filtered_transactions["group"] == selected_group
+].copy()
+
+comparison_df = (
+    same_group_rows.groupby("category", as_index=False)["amount"]
+    .sum()
+    .sort_values("amount", ascending=False)
+)
+
+selected_total = comparison_df.loc[
+    comparison_df["category"] == selected_category, "amount"
+].sum()
+
+group_total = comparison_df["amount"].sum()
+other_total = group_total - selected_total
+portion = (selected_total / group_total * 100) if group_total > 0 else 0
+
+comparison_df = comparison_df.reset_index(drop=True)
+standing = comparison_df.index[comparison_df["category"] == selected_category][0] + 1
