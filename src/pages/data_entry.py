@@ -85,5 +85,9 @@ if submitted:
         st.error("Tag is required.")
     else:
         new_record = {
-            "date"
+            "date": entry_date.strftime("%Y-%m-%d"),
+            "group": group,
+            "category": category,
+            "amount": round(float(amount), 2),
+            "tag": tag.strip()
         }
