@@ -291,7 +291,9 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
 
         with col1:
             if st.button(category_name, key=f"{group_name}_{category_name}", use_container_width=True):
-                    st.page_link("pages/category_info.py", label="New Data Entry", icon="🗳️")
+                st.session_state["selected_category"] = category_name
+                st.query_params["category"] = category_name
+                st.switch_page("pages/category_info.py")
 
         with col2:
             st.write(f"${row['Amount']:,.2f}")
