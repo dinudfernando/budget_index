@@ -91,7 +91,7 @@ def filter_by_timeframe(df: pd.DataFrame, tf: str) -> pd.DataFrame:
     return df[df["date"].between(start,end)].copy()
 
 if "category_info_tf" not in st.session_state:
-    st.session_state["category_info_tf"] = "M"
+    st.session_state["category_info_tf"] = "Y"
 
 page_tf = st.session_state["category_info_tf"]
 
@@ -143,7 +143,7 @@ with controls_left:
         label_visibility="collapsed"
     )
 
-    new_tf = new_tf or "M"
+    new_tf = new_tf or "Y"
 
     if new_tf != st.session_state["category_info_tf"]:
         st.session_state["category_info_tf"] = new_tf
@@ -219,7 +219,7 @@ with comparison_col:
             theta=alt.Theta("Amount:Q"),
             color=alt.Color(
                 "Slice:N",
-                scale=alt.Scale(domain=[selected_category, "All Others"], range=["#111827", "#d1d5db"]),
+                scale=alt.Scale(domain=[selected_category, "All Others"], range=["#7395DC", "#395783"]),
                 legend=None
             ),
             tooltip=["Slice:N", alt.Tooltip("Amount:Q", format=",.2f")]
