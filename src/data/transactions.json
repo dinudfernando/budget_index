@@ -5038,5 +5038,12 @@
     "category": "Shopping",
     "amount": 91,
     "tag": "Accessories"
+  },
+  {
+    "date": "2026-05-06",
+    "group": "Income",
+    "category": "Freelance",
+    "amount": 2000.0,
+    "tag": "Pilot Project"
   }
 ]
