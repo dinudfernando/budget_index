@@ -273,5 +273,7 @@ history_df = history_df.sort_values(
 )
 
 st.dataframe(
-    
+    history_df,
+    use_container_width=True,
+    hide_index=True    
 )
