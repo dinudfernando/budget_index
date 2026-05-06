@@ -34,7 +34,18 @@ def load_transactions() -> pd.DataFrame:
     df["amount"] = pd.to_numeric(df["amount"])
     return df.sort_values("date")
 
+@st.cache_data
+def load_budgets() -> pd.DataFrame:
+    path = get_data_path("budgets.json")
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    df = pd.DataFrame(data)
+    df["budget"] = pd.to_numeric(df["budget"])
+    return df
+
 transactions_df = load_transactions()
+budgets_df = load_budgets()
 # Categories are shown based on whether redirected or would default to the first category
 all_categories = sorted(transactions_df["category"].dropna().unique().tolist())
 
@@ -134,3 +145,8 @@ with controls_left:
     if new_tf != st.session_state["category_info_tf"]:
         st.session_state["category_info_tf"] = new_tf
         st.rerun()
+
+with controls_right:
+    st.page_link("data_entry.py", label="+ New Data", icon="➕")
+
+stats_col, comparison_col = st.columns(2)
