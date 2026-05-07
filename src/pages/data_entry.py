@@ -142,6 +142,7 @@ if submitted:
 st.divider()
 st.subheader("Change Budget")
 
+# Finding budget group (income or expenses)
 budget_group = st.selectbox(
     "Budget Group",
     ["Income", "Expenses"],
