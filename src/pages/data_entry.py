@@ -141,3 +141,23 @@ if submitted:
 
 st.divider()
 st.subheader("Change Budget")
+
+budget_group = st.selectbox(
+    "Budget Group",
+    ["Income", "Expenses"],
+    key="budget_group"
+)
+
+if budget_group == "Income":
+    budget_category_options = income_categories
+else:
+    budget_category_options = expenses_categories
+
+if "budget_category" in st.session_state and st.session_state["budget_category"] not in budget_category_options:
+    st.session_state["budget_category"] = budget_category_options[0]
+
+budget_category = st.selectbox(
+    "Budget Category",
+    budget_category_options,
+    key="budget_category"
+)
