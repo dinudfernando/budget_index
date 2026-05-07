@@ -161,3 +161,10 @@ budget_category = st.selectbox(
     budget_category_options,
     key="budget_category"
 )
+
+# Setting budget 
+current_budget_series = budgets_df.loc[
+    budgets_df["category"] == budget_category, "budget"
+]
+
+current_budget = float(current_budget_series.iloc[0]) if not current_budget_series.empty else 0.0
