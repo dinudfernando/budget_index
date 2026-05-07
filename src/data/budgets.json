@@ -1,43 +1,31 @@
 [
   {
-    "category": "Salary",
-    "budget": 3600
-  },
-  {
-    "category": "Freelance",
-    "budget": 500
-  },
-  {
-    "category": "Other Income",
-    "budget": 100
-  },
-  {
-    "category": "Housing",
-    "budget": 1300
+    "category": "Entertainment",
+    "budget": 120
   },
   {
     "category": "Food",
     "budget": 400
   },
   {
-    "category": "Transport",
-    "budget": 200
-  },
-  {
-    "category": "Utilities",
-    "budget": 190
-  },
-  {
-    "category": "Entertainment",
-    "budget": 120
-  },
-  {
-    "category": "Subscriptions",
-    "budget": 30
+    "category": "Freelance",
+    "budget": 2000.0
   },
   {
     "category": "Health",
     "budget": 75
+  },
+  {
+    "category": "Housing",
+    "budget": 1300
+  },
+  {
+    "category": "Other Income",
+    "budget": 100
+  },
+  {
+    "category": "Salary",
+    "budget": 3600
   },
   {
     "category": "Savings",
@@ -46,5 +34,17 @@
   {
     "category": "Shopping",
     "budget": 120
+  },
+  {
+    "category": "Subscriptions",
+    "budget": 30
+  },
+  {
+    "category": "Transport",
+    "budget": 200
+  },
+  {
+    "category": "Utilities",
+    "budget": 190
   }
 ]
