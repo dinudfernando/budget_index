@@ -235,8 +235,25 @@ def build_trend_data(transactions: pd.DataFrame) -> pd.DataFrame:
 
 trend_df = build_trend_data(transactions_df)
 
-def budget_pct_color(pct: float) -> str:
-    """Returns color for budget usage percentage"""
+def budget_pct_color(pct: float, group_name: str) -> str:
+    """Returns color for budget usage percentage by group."""
+    if group_name == "Income":
+        if pct >= 200:
+            return "#166534"   # dark green
+        elif pct >= 150:
+            return "#22c55e"   # green
+        elif pct >= 100:
+            return "#86efac"   # light green
+        elif pct >= 85:
+            return "#facc15"   # yellow
+        elif pct >= 60:
+            return "#fca5a5"   # light red
+        elif pct >= 30:
+            return "#dc2626"   # red
+        else:
+            return "#7f1d1d"   # dark red
+
+    # Expenses: higher budget usage is worse
     if pct >= 200:
         return "#7f1d1d"   # dark red
     elif pct >= 150:
@@ -303,7 +320,7 @@ def render_watchlist_group(group_name: str, watchlist: pd.DataFrame, trends: pd.
             st.write(f"${row['Amount']:,.2f}")
         
         with col3:
-            pct_color = budget_pct_color(float(row["PctBudget"]))
+            pct_color = budget_pct_color(float(row["PctBudget"]), group_name)
             st.markdown(
                 f"<span style='color:{pct_color}; font-weight:600;'>{row['PctBudget']:,.1f}%</span>",
                 unsafe_allow_html=True
