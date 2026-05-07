@@ -122,22 +122,6 @@ with st.form("new_transaction_form"):
 
     submitted = st.form_submit_button("Save Record", use_container_width=True)
 
-if submitted:
-    if amount <= 0:
-        st.error("Amount must be greater than 0!")
-    elif not tag.strip():
-        st.error("Tag is required.")
-    else:
-        new_record = {
-            "date": entry_date.strftime("%Y-%m-%d"),
-            "group": group,
-            "category": category,
-            "amount": round(float(amount), 2),
-            "tag": tag.strip()
-        }
-        save_transaction(new_record)
-        st.success("New record saved successfully!")
-        st.json(new_record)
 
 st.divider()
 st.subheader("Change Budget")
@@ -169,3 +153,46 @@ current_budget_series = budgets_df.loc[
 ]
 
 current_budget = float(current_budget_series.iloc[0]) if not current_budget_series.empty else 0.0
+
+#Budget input form
+with st.form("budget_update_form"):
+    new_budget = st.number_input(
+        "Monthly Budget",
+        min_value=0.0,
+        value=current_budget,
+        step=1.0,
+        format="%.2f"
+    )
+
+    budget_submitted = st.form_submit_button("Update Budget", use_container_width=True)
+
+
+# Form Submits
+
+if submitted:
+    if amount <= 0:
+        st.error("Amount must be greater than 0!")
+    elif not tag.strip():
+        st.error("Tag is required.")
+    else:
+        new_record = {
+            "date": entry_date.strftime("%Y-%m-%d"),
+            "group": group,
+            "category": category,
+            "amount": round(float(amount), 2),
+            "tag": tag.strip()
+        }
+        save_transaction(new_record)
+        st.success("New record saved successfully!")
+        st.json(new_record)
+
+
+
+if budget_submitted:
+    if budget_category is None:
+        st.error("Please select a budget category.")
+    else:
+        update_budget(budget_category, new_budget)
+        st.success(f"Budget for {budget_category} updated successfully!")
+        st.write(f"New monthly budget: ${new_budget:,.2f}")
+        st.rerun()
