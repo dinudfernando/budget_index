@@ -2,7 +2,7 @@
 ![image](https://github.com/dinudfernando/budget_index/blob/main/src/assets/budget_index_logo.png)
 
 
-Budget Index is a personal finance dashboard built with Streamlit and pandas. It lets you track income and expenses, visualize trends over time, compare categories, and drill down into detailed views for each spending or income category.
+Budget Index is a data driven university project (CS196); personal finance dashboard built with Streamlit and pandas. It lets you track income and expenses, visualize trends over time, compare categories, and drill down into detailed views for each spending or income category.
 
 ---
 
